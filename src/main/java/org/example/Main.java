@@ -37,7 +37,7 @@ public class Main {
         driver.findElement(By.name("Provider.StatusDt")).sendKeys("12/12/2001");
         driver.findElement(By.name("AppointedDt")).sendKeys("12/20/2023");
         driver.findElement(By.name("ProviderName.CommercialName")).sendKeys("Smartims");
-// Address
+// Address for producer
         driver.findElement(By.name("ProviderStreetAddr.Addr1")).sendKeys("20000 Saums Rd");
         driver.findElement(By.name("ProviderStreetAddr.City")).sendKeys("Katy");
         driver.findElement(By.name("ProviderStreetAddr.StateProvCd")).sendKeys("Texas");
