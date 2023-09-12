@@ -1,7 +1,7 @@
 package org.example;
 
 public class ConstantsClass {
-
+    public static final String policySearchTab1 = "//*[@id=\"AdvancedSearchPolicy\"]";
     public static final String policySearchTab = "//*[@id=\"AdvancedSearchPolicy\"]";
     public static final String policyNumberTextField = "//*[@id=\"PolicyNumber\"]";
     public static final String searchButton = "//*[@id=\"SearchPolicy\"]";
