@@ -16,6 +16,7 @@ public class Cancellation {
 
 
         Actions actions = new Actions(driver);
+        //Bala
         driver.manage().window().maximize();
         driver.get("http://localhost:8080/innovation");
 
