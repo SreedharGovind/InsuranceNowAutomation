@@ -13,7 +13,7 @@ public class Cancellation {
         ChromeOptions co = new ChromeOptions();
         co.addArguments("--remote-allow-origins=*");
         ChromeDriver driver = new ChromeDriver(co);
-// AccountCreationVO pvo = new AccountCreationVO();
+
 
         Actions actions = new Actions(driver);
         driver.manage().window().maximize();
