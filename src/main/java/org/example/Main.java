@@ -15,12 +15,11 @@ public class Main {
 // AccountCreationVO pvo = new AccountCreationVO();
         Actions actions = new Actions(driver);
         driver.manage().window().maximize();
-        driver.get("http://localhost:8080/innovation");
-        driver.findElement(By.id("j_username")).sendKeys("admin");
-        driver.findElement(By.id("j_password")).sendKeys("Not9999!", Keys.ENTER);
+        driver.get(ConstantsClass.localHostUrl);
+        driver.findElement(By.id(ConstantsClass.username)).sendKeys("admin");
+        driver.findElement(By.id(ConstantsClass.password)).sendKeys("Not9999!", Keys.ENTER);
 //adding producer
-        WebElement producer;
-        producer = driver.findElement(By.id("Menu_Policy"));
+        WebElement producer = driver.findElement(By.id("Menu_Policy"));
         actions.moveToElement(producer).perform();
         driver.findElement(By.xpath("//*[@id=\"Menu_Policy_UnderwritingMaintenance\"]")).click();
         driver.findElement(By.xpath("//*[@id=\"UnderwritingMaintenance\"]/table/tbody/tr[1]/td[1]/a")).click();
@@ -28,7 +27,7 @@ public class Main {
 
         driver.findElement(By.name("Provider.ProviderNumber")).sendKeys("QATeam");
 
-        WebElement producerType =driver.findElement(By.name("Provider.StatusCd"));
+        WebElement producerType = driver.findElement(By.name("Provider.StatusCd"));
         actions.moveToElement(producerType).perform();
         driver.findElement(By.xpath("//*[@id=\"ProducerTypeCd\"]/option[6]")).click();
         WebElement status = driver.findElement(By.name("Provider.StatusCd"));
@@ -56,8 +55,6 @@ public class Main {
         driver.findElement(By.name("Save")).click();
 
 
-
-
 //Adding state to the producer
 //To add state discard changes
         driver.findElement(By.id("DiscardChanges")).click();
@@ -71,7 +68,7 @@ public class Main {
 
 //adding state details
         driver.findElement(By.id("StateInfo.StateCd")).sendKeys("Texas");
-        WebElement Programtype=driver.findElement(By.name("StateInfo.ProgramType"));
+        WebElement Programtype = driver.findElement(By.name("StateInfo.ProgramType"));
         actions.moveToElement(Programtype).perform();
         driver.findElement(By.xpath("//*[@id=\"StateInfo.ProgramType\"]/option[3]")).click();
 
@@ -84,7 +81,7 @@ public class Main {
 
         driver.findElement(By.name("LicensedProduct.StateProvCd")).sendKeys("Texas");
 
-        WebElement Programtype1=driver.findElement(By.name("LicensedProduct.ProgramType"));
+        WebElement Programtype1 = driver.findElement(By.name("LicensedProduct.ProgramType"));
         actions.moveToElement(Programtype1).perform();
         driver.findElement(By.xpath("//*[@id=\"LicensedProduct.ProgramType\"]/option[3]")).click();
 
@@ -97,4 +94,4 @@ public class Main {
 // driver.findElement(By.name("LicensedProduct.CommissionRenewalPct")).sendKeys("3");
 
     }
-    }
+}
