@@ -13,10 +13,9 @@ public class Cancellation {
         ChromeOptions co = new ChromeOptions();
         co.addArguments("--remote-allow-origins=*");
         ChromeDriver driver = new ChromeDriver(co);
-
+// AccountCreationVO pvo = new AccountCreationVO();
 
         Actions actions = new Actions(driver);
-        //Bala
         driver.manage().window().maximize();
         driver.get("http://localhost:8080/innovation");
 
