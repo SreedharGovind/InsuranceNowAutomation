@@ -1,4 +1,4 @@
-package com.smartims.insurancepractice.insurancenow;
+package com.smartims.insurancepractice.insurancenow.testscenario01;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
-public class NewBusiness_Quote {
+public class NewBusiness {
     public static void main(String[] args) throws InterruptedException {
         ChromeOptions co = new ChromeOptions();
         co.addArguments("--remote-allow-origins=*");
