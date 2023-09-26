@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="825156ad-1baa-47f0-8ba1-d5219d79c1f6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/example/NewBusiness.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Main.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/INOW Automation Data Sheet.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/INOW Automation Data Sheet.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartims/insurancepractice/insurancenow/testScenario01/NewBusiness.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartims/insurancepractice/insurancenow/testScenario01/NewBusiness.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +111,31 @@
       <option name="project" value="LOCAL" />
       <updated>1695712283590</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Adding excelclass and Used getter and setter in newbusinessclass">
+      <option name="closed" value="true" />
+      <created>1695713822890</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1695713822890</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Adding excelclass and Used getter and setter in newbusinessclass">
+      <option name="closed" value="true" />
+      <created>1695713878221</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1695713878221</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Adding excelclass and Used getter and setter in newbusinessclass">
+      <option name="closed" value="true" />
+      <created>1695713904150</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1695713904150</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
