@@ -1,4 +1,4 @@
-package com.smartims.insurancepractice.insurancenow.testscenario01;
+package com.smartims.insurancepractice.insurancenow.testScenario01;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
