@@ -1,6 +1,6 @@
 package com.smartims.insurancepractice.insurancenow.voclasses;
 
-public class Expire {
+public class ExpireVO {
     String expireStartTransaction;
     String expireReason;
     String expireComments;
