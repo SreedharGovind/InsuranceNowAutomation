@@ -1,4 +1,4 @@
-package com.smartims.insurancepractice.insurancenow.voclasses;
+package com.smartims.insurancepractice.insurancenow.voClasses;
 
 public class NonRenewalVO {
     String nonRenewal;
