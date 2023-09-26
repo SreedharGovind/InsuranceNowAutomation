@@ -1,6 +1,6 @@
-package com.smartims.insurancepractice.insurancenow.voclasses;
+package com.smartims.insurancepractice.insurancenow.voClasses;
 
-public class CancellationNotice {
+public class CancellationNoticeVO {
     String cancellationNoticeStartTransaction;
     String cancellationNoticeNoticeDate;
     String cancellationNoticeCancellationType;
