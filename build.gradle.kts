@@ -16,6 +16,8 @@ dependencies {
     testImplementation("org.junit:junit-bom:5.9.1")
     implementation("org.seleniumhq.selenium:selenium-java:3.141.59")
     implementation("org.seleniumhq.selenium:selenium-java:4.11.0")
+    implementation("org.apache.poi:poi:5.2.3")
+    implementation("org.apache.poi:poi-ooxml:5.2.3")
 
 }
 
