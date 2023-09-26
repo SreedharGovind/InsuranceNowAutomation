@@ -1,5 +1,6 @@
 package com.smartims.insurancepractice.insurancenow.testscenario01;
-import com.smartims.insurancepractice.insurancenow.voclasses.NewBussinesVO;
+import com.smartims.insurancepractice.insurancenow.testScenario01.ExcelClass;
+import com.smartims.insurancepractice.insurancenow.voClasses.NewBussinesVO;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -8,7 +9,7 @@ import org.openqa.selenium.interactions.Actions;
 
 import java.io.IOException;
 
-public class NewBusiness {
+public class NewBusiness_01 {
     public static void main(String[] args) throws InterruptedException, IOException {
         ChromeOptions co = new ChromeOptions();
         co.addArguments("--remote-allow-origins=*");
@@ -17,6 +18,7 @@ public class NewBusiness {
         driver.manage().window().maximize();
         driver.get("http://localhost:8080/innovation");
         NewBussinesVO nbvo = new NewBussinesVO();
+
         nbvo.setNewBusinessEffectiveDate(ExcelClass.getCellValueByLabel("newBusinessEffectiveDate"));
         nbvo.setNewBusinessState(ExcelClass.getCellValueByLabel("newBusinessState"));
         nbvo.setNewBusinessProgramType(ExcelClass.getCellValueByLabel("newBusinessProgramType"));
