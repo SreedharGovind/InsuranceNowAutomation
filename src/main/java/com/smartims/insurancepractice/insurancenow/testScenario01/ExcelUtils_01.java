@@ -7,7 +7,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 
-public class ExcelClass {
+public class ExcelUtils_01 {
 
     public static String getCellValueByLabel(String label) throws IOException {
         // Create a new Excel workbook and sheet

@@ -353,7 +353,7 @@ public class NewBussinesVO {
     String newBusinessAIPrivatePassengerAuto3;
     String newBusinessPayPlans;
     String newBusinessCreateApplication;
-    String newBusinessUWQuestionsNo;
+    String newBusinessUWQuestions;
     String newBusinessFinish;
     String newBusinessPaymentType;
     String newBusinessPremiumAmount;
@@ -3161,12 +3161,12 @@ public class NewBussinesVO {
         this.newBusinessCreateApplication = newBusinessCreateApplication;
     }
 
-    public String getNewBusinessUWQuestionsNo() {
-        return newBusinessUWQuestionsNo;
+    public String getNewBusinessUWQuestions() {
+        return newBusinessUWQuestions;
     }
 
-    public void setNewBusinessUWQuestionsNo(String newBusinessUWQuestionsNo) {
-        this.newBusinessUWQuestionsNo = newBusinessUWQuestionsNo;
+    public void setNewBusinessUWQuestions(String newBusinessUWQuestions) {
+        this.newBusinessUWQuestions = newBusinessUWQuestions;
     }
 
     public String getNewBusinessFinish() {
