@@ -1,4 +1,4 @@
-package com.smartims.insurancepractice.insurancenow.testScenario01;
+package com.smartims.insurancepractice.insurancenow.commonClasses;
 
 import com.smartims.insurancepractice.insurancenow.commonClasses.ConstantsClass;
 import org.openqa.selenium.By;
