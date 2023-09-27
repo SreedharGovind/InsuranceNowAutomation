@@ -2,7 +2,7 @@ package com.smartims.insurancepractice.insurancenow.voClasses;
 
 public class CredentialsVO {
     String userName;
-    String  Password;
+    String  password;
 
     public String getUserName() {
         return userName;
@@ -13,10 +13,10 @@ public class CredentialsVO {
     }
 
     public String getPassword() {
-        return Password;
+        return password;
     }
 
     public void setPassword(String password) {
-        Password = password;
+        this.password = password;
     }
 }
