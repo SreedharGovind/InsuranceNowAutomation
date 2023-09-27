@@ -1,15 +1,15 @@
 package com.smartims.insurancepractice.insurancenow.voClasses;
 
 public class ReinstatementVO {
-    String reinstatementDescriptions;
+    String reinstatementDescription;
     String reinstatementAdditionalNoticeText;
 
-    public String getReinstatementDescriptions() {
-        return reinstatementDescriptions;
+    public String getReinstatementDescription() {
+        return reinstatementDescription;
     }
 
-    public void setReinstatementDescriptions(String reinstatementDescriptions) {
-        this.reinstatementDescriptions = reinstatementDescriptions;
+    public void setReinstatementDescription(String reinstatementDescription) {
+        this.reinstatementDescription = reinstatementDescription;
     }
 
     public String getReinstatementAdditionalNoticeText() {
