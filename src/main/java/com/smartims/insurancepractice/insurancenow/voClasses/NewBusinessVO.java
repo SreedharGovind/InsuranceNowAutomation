@@ -1,6 +1,6 @@
 package com.smartims.insurancepractice.insurancenow.voClasses;
 
-public class NewBussinesVO {
+public class NewBusinessVO {
     String newBusinessEffectiveDate;
     String newBusinessState;
     String newBusinessProgramType;
