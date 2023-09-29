@@ -7,12 +7,12 @@ import org.openqa.selenium.interactions.Actions;
 import java.io.IOException;
 
 public class AllTransactions_TS02 {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, InterruptedException {
         ChromeDriver driver = CommonClass.getchromedriver();
         Actions actions = new Actions(driver);
 
         // Create new Account
-//        NewBusiness_TS02 nb = new NewBusiness_TS02();
-//        nb.newBusiness_TS02(driver, actions);
+        NewBusiness_TS02 nb = new NewBusiness_TS02();
+        nb.newBusiness_TS02(driver, actions);
     }
 }

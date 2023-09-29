@@ -1,37 +1,19 @@
 package com.smartims.insurancepractice.insurancenow.testScenario02;
 
 import com.smartims.insurancepractice.insurancenow.commonClasses.ConstantsClass;
-import com.smartims.insurancepractice.insurancenow.voClasses.CredentialsVO;
 import com.smartims.insurancepractice.insurancenow.voClasses.NewBusinessVO;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
-
 import java.io.IOException;
-import java.time.Duration;
 
 public class NewBusiness_TS02 {
-//    void newBusiness_TS02(ChromeDriver driver, Actions actions) throws IOException, InterruptedException {
-
-    public static void main(String[] args) throws InterruptedException, IOException {
-        ChromeOptions co = new ChromeOptions();
-        co.addArguments("--remote-allow-origins=*");
-        ChromeDriver driver = new ChromeDriver(co);
-        Actions actions = new Actions(driver);
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.manage().window().maximize();
-        driver.get(ConstantsClass.localHostUrl);
-        CredentialsVO cvo = new CredentialsVO();
+    void newBusiness_TS02(ChromeDriver driver, Actions actions) throws IOException, InterruptedException {
         NewBusinessVO nvo = new NewBusinessVO();
-        cvo.setUserName(ExcelUtils_TS02.getCellValueByLabel("userName"));
-        cvo.setPassword(ExcelUtils_TS02.getCellValueByLabel("password"));
-        driver.findElement(By.id(ConstantsClass.username)).sendKeys(cvo.getUserName());
-        driver.findElement(By.id(ConstantsClass.password)).sendKeys(cvo.getPassword(), Keys.ENTER);
 
         nvo.setNewBusinessEffectiveDate(ExcelUtils_TS02.getCellValueByLabel("newBusinessEffectiveDate"));
         nvo.setNewBusinessState(ExcelUtils_TS02.getCellValueByLabel("newBusinessState"));
