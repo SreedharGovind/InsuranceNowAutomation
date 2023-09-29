@@ -84,6 +84,26 @@ public class ConstantsClass {
     public static final String closeOut = "//*[@id=\"Closeout\"]/span";
     public static final String paymentTypeCode = "TransactionInfo.PaymentTypeCd";
     public static final String process = "//*[@id=\"Process\"]/span";
+    public static final String wizardNonDrivers = "Wizard_Non-Drivers";
+    public static final String addNonDriver = "AddNonDriver";
+    public static final String endorsementNonDriver1NonDriverType = "DriverInfo.DriverTypeCd";
+    public static final String endorsementNonDriver1FirstName = "NameInfo.GivenName";
+    public static final String endorsementNonDriver1LastName = "NameInfo.Surname";
+    public static final String endorsementNonDriver1RelationshipToInsured = "DriverInfo.RelationshipToInsuredCd";
+    public static final String endorsementNonDriver1BirthDate = "PersonInfo.BirthDt";
+    public static final String endorsementNonDriver1Gender = "PersonInfo.GenderCd";
+    public static final String endorsementNonDriver1MaritalStatus = "PersonInfo.MaritalStatusCd";
+    public static final String wizardAdditionalInterests = "Wizard_AdditionalInterests";
+    public static final String addAdditionalInterest = "AddAdditionalInterest";
+    public static final String endorsementAICode = "AI.InterestCd";
+    public static final String additionalInterestTypeCode = "AI.InterestTypeCd";
+
+    public static final String saveButton = "Save";
+    public static final String finishButton = "Closeout";
+    public static final String aIDetailLookup = "AIDetail_Lookup";
+    public static final String search = "Search";
+    public static final String privatePassengerAutoCheckbox = "LinkReferenceInclude_0";
+    public static final String navigateNonDriverParty = "Navigate_NonDriverParty";
     //    public static final String  = ;
     //    public static final String  = ;
     //    public static final String  = ;
