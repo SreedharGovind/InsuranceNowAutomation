@@ -13,8 +13,9 @@ import org.openqa.selenium.interactions.Actions;
 import java.io.IOException;
 
 public class NewBusiness_01 {
-    public void getNewBussines(ChromeDriver driver) throws IOException, InterruptedException {
-        NewBussinesVO nbvo = new NewBussinesVO();
+    public void getNewBussines(ChromeDriver driver) throws  IOException,InterruptedException{
+            NewBussinesVO nbvo = new NewBussinesVO();
+
         nbvo.setNewBusinessEffectiveDate(ExcelUtils_01.getCellValueByLabel("newBusinessEffectiveDate"));
         nbvo.setNewBusinessState(ExcelUtils_01.getCellValueByLabel("newBusinessState"));
         nbvo.setNewBusinessProgramType(ExcelUtils_01.getCellValueByLabel("newBusinessProgramType"));
@@ -129,40 +130,40 @@ public class NewBusiness_01 {
         Thread.sleep(10000);
         // In use
         driver.findElement(By.name(ConstantsClass.newBusinessVehicle1Use)).sendKeys(nbvo.getNewBusinessVehicle1Use());
-        driver.findElement(By.name(ConstantsClass.newBusinessVehicle1PurchasedOrLeased)).sendKeys(nbvo.getNewBusinessVehicle1PurchasedOrLeased());
+        driver.findElement(By.name("Vehicle.LeasedVehInd")).sendKeys(nbvo.getNewBusinessVehicle1PurchasedOrLeased());
         //Coverages
-        driver.findElement(By.name(ConstantsClass.newBusinessVehicle1OtherThanCollisionDeductible)).sendKeys(nbvo.getNewBusinessVehicle1OtherThanCollisionDeductible());
-        driver.findElement(By.name(ConstantsClass.newBusinessVehicle1CollisionDeductible)).sendKeys(nbvo.getNewBusinessVehicle1CollisionDeductible());
-        driver.findElement(By.name(ConstantsClass.newBusinessVehicle1RentalReimbursement)).sendKeys(nbvo.getNewBusinessVehicle1RentalReimbursement());
-        driver.findElement(By.name(ConstantsClass.newBusinessVehicle1TowingAndLabor)).sendKeys(nbvo.getNewBusinessVehicle1TowingAndLabor());
-        driver.findElement(By.name(ConstantsClass.newBusinessVehicle1SpecialEquipment)).sendKeys(nbvo.getNewBusinessVehicle1SpecialEquipment());
-        driver.findElement(By.id(ConstantsClass.nextPageBottom)).click();
+        driver.findElement(By.name("Vehicle.OtherThanCollisionDed")).sendKeys(nbvo.getNewBusinessVehicle1OtherThanCollisionDeductible());
+        driver.findElement(By.name("Vehicle.CollisionDed")).sendKeys(nbvo.getNewBusinessVehicle1CollisionDeductible());
+        driver.findElement(By.name("Vehicle.RentalReimbursementLimit")).sendKeys(nbvo.getNewBusinessVehicle1RentalReimbursement());
+        driver.findElement(By.name("Vehicle.TowingLaborLimit")).sendKeys(nbvo.getNewBusinessVehicle1TowingAndLabor());
+        driver.findElement(By.name("Vehicle.SpecialEquipmentLimit")).sendKeys(nbvo.getNewBusinessVehicle1SpecialEquipment());
+        driver.findElement(By.id("NextPage_Bottom")).click();
         //Billing
-        driver.findElement(By.id(ConstantsClass.nextPageBottom)).click();
-        driver.findElement(By.id(ConstantsClass.newBusinessPayPlans)).click();
-        driver.findElement(By.id(ConstantsClass.bindButton)).click();
-        driver.findElement(By.id(ConstantsClass.newBusinessWizardUnderwriting)).click();
+        driver.findElement(By.id("NextPage_Bottom")).click();
+        driver.findElement(By.id("BasicPolicy.PayPlanCd_1")).click();
+        driver.findElement(By.id("Bind")).click();
+        driver.findElement(By.id("Wizard_Underwriting")).click();
 //     Underwritting reasons
-        driver.findElement(By.id(ConstantsClass.questionProperLicense)).sendKeys(nbvo.getNewBusinessUWQuestions());
-        driver.findElement(By.id(ConstantsClass.questionPossibleDriver)).sendKeys(nbvo.getNewBusinessUWQuestions());
-        driver.findElement(By.id(ConstantsClass.questionDriverConviction)).sendKeys(nbvo.getNewBusinessUWQuestions());
-        driver.findElement(By.id(ConstantsClass.questionHouseholdResident)).sendKeys(nbvo.getNewBusinessUWQuestions());
-        driver.findElement(By.id(ConstantsClass.questionExcludedSpouse)).sendKeys(nbvo.getNewBusinessUWQuestions());
-        driver.findElement(By.id(ConstantsClass.questionBusinessVehicle)).sendKeys(nbvo.getNewBusinessUWQuestions());
-        driver.findElement(By.id(ConstantsClass.questionExistingDamage)).sendKeys(nbvo.getNewBusinessUWQuestions());
-        driver.findElement(By.id(ConstantsClass.questionDifferentAddress)).sendKeys(nbvo.getNewBusinessUWQuestions());
-        driver.findElement(By.id(ConstantsClass.questionSpecialEquipment)).sendKeys(nbvo.getNewBusinessUWQuestions());
-        driver.findElement(By.id(ConstantsClass.questionOtherVehicle)).sendKeys(nbvo.getNewBusinessUWQuestions());
-        driver.findElement(By.id(ConstantsClass.questionTitledVehicle)).sendKeys(nbvo.getNewBusinessUWQuestions());
-        driver.findElement(By.id(ConstantsClass.questionDriverViolation)).sendKeys(nbvo.getNewBusinessUWQuestions());
-        driver.findElement(By.id(ConstantsClass.questionDriverCondition)).sendKeys(nbvo.getNewBusinessUWQuestions());
-        driver.findElement(By.id(ConstantsClass.questionVehicleModification)).sendKeys(nbvo.getNewBusinessUWQuestions());
-        driver.findElement(By.id(ConstantsClass.questionLiveryVehicle)).sendKeys(nbvo.getNewBusinessUWQuestions());
-        driver.findElement(By.xpath(ConstantsClass.closeOut)).click();
+        driver.findElement(By.id("Question_ProperLicense")).sendKeys(nbvo.getNewBusinessUWQuestions());
+        driver.findElement(By.id("Question_PossibleDriver")).sendKeys(nbvo.getNewBusinessUWQuestions());
+        driver.findElement(By.id("Question_DriverConviction")).sendKeys(nbvo.getNewBusinessUWQuestions());
+        driver.findElement(By.id("Question_HouseholdResident")).sendKeys(nbvo.getNewBusinessUWQuestions());
+        driver.findElement(By.id("Question_ExcludedSpouse")).sendKeys(nbvo.getNewBusinessUWQuestions());
+        driver.findElement(By.id("Question_BusinessVehicle")).sendKeys(nbvo.getNewBusinessUWQuestions());
+        driver.findElement(By.id("Question_ExistingDamage")).sendKeys(nbvo.getNewBusinessUWQuestions());
+        driver.findElement(By.id("Question_DifferentAddress")).sendKeys(nbvo.getNewBusinessUWQuestions());
+        driver.findElement(By.id("Question_SpecialEquipment")).sendKeys(nbvo.getNewBusinessUWQuestions());
+        driver.findElement(By.id("Question_OtherVehicle")).sendKeys(nbvo.getNewBusinessUWQuestions());
+        driver.findElement(By.id("Question_TitledVehicle")).sendKeys(nbvo.getNewBusinessUWQuestions());
+        driver.findElement(By.id("Question_DriverViolation")).sendKeys(nbvo.getNewBusinessUWQuestions());
+        driver.findElement(By.id("Question_DriverCondition")).sendKeys(nbvo.getNewBusinessUWQuestions());
+        driver.findElement(By.id("Question_VehicleModification")).sendKeys(nbvo.getNewBusinessUWQuestions());
+        driver.findElement(By.id("Question_LiveryVehicle")).sendKeys(nbvo.getNewBusinessUWQuestions());
+        driver.findElement(By.xpath("//*[@id=\"Closeout\"]/span")).click();
 //        Payment close out screen
-        driver.findElement(By.id(ConstantsClass.paymentTypeCode)).sendKeys(nbvo.getNewBusinessPaymentType());
+        driver.findElement(By.id("TransactionInfo.PaymentTypeCd")).sendKeys(nbvo.getNewBusinessPaymentType());
 //        Issue the Bussiness
-        driver.findElement(By.xpath(ConstantsClass.process)).click();
+        driver.findElement(By.xpath("//*[@id=\"Process\"]/span")).click();
     }
 
 
