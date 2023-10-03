@@ -60,10 +60,8 @@ public class Cancellation_03 {
 
         policyTab.click();
         Thread.sleep(2000);
-        //driver.findElement(By.id(Constants_03.changeDateId)).click();
+        driver.findElement(By.id(Constants_03.changeDateId)).click();
         WebElement ChangeDate = driver.findElement(By.id(Constants_03.changeDateId));
-
         actions.moveToElement(ChangeDate).perform();
-
         policyTab.click();
     }}
