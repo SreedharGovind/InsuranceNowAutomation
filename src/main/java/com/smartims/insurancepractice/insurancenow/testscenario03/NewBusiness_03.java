@@ -158,6 +158,8 @@ public class NewBusiness_03 {
         driver.findElement(By.id("TransactionInfo.PaymentTypeCd")).sendKeys(nbvo.getNewBusinessPaymentType());
 //        Issue the Bussiness
         driver.findElement(By.xpath("//*[@id=\"Process\"]/span")).click();
+
+        Thread.sleep(5000);
     }
 
 }

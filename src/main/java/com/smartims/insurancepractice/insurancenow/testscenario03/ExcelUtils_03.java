@@ -12,7 +12,7 @@ public class ExcelUtils_03 {
     public static String getCellValueByLabel(String label) throws IOException {
         // Create a new Excel workbook and sheet
 
-        String filepath = "D:\\INOW Testing\\INOW Automation Data Sheet.xlsx";
+        String filepath = "INOW Automation Data Sheet.xlsx";
 
         FileInputStream file = new FileInputStream(new File(filepath));
         String sheetName = "TS_03";

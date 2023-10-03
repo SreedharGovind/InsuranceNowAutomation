@@ -30,7 +30,7 @@ public class TestCase_06 {
 
         policyTab.click();
 
-        driver.findElement(By.xpath(Constants_03.policyNumberTextField)).sendKeys("PA0000017-01");
+        driver.findElement(By.xpath(Constants_03.policyNumberTextField)).sendKeys("PA0000021-01");
 
         WebElement searchButton = driver.findElement(By.xpath(Constants_03.searchButton));
 
