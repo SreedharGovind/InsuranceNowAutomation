@@ -30,7 +30,7 @@ public class TestCase_06 {
 
         policyTab.click();
 
-        driver.findElement(By.xpath(Constants_03.policyNumberTextField)).sendKeys("PA0000015-01");
+        driver.findElement(By.xpath(Constants_03.policyNumberTextField)).sendKeys("PA0000017-01");
 
         WebElement searchButton = driver.findElement(By.xpath(Constants_03.searchButton));
 
@@ -39,9 +39,14 @@ public class TestCase_06 {
         searchButton.click();
         driver.findElement(By.xpath(Constants_03.makePayment)).click();
         driver.findElement(By.id(Constants_03.pay)).click();
-        driver.findElement(By.id(Constants_03.newCreditCardId)).click();
+        driver.findElement(By.id(Constants_03.newACH)).click();
         driver.findElement(By.id(Constants_03.newPremiumAmount)).sendKeys("$229.15");
-        driver.findElement(By.id(Constants_03.totalAmount)).sendKeys("$229.15");
-
-
-}}
+        driver.findElement(By.id(Constants_03.bankAccountEntryType)).sendKeys("Personal");
+        driver.findElement(By.id(Constants_03.bankAccountType)).sendKeys("Savings");
+        driver.findElement(By.id(Constants_03.accountNumber)).sendKeys("1623069645");
+        driver.findElement(By.id(Constants_03.routingNumber)).sendKeys("011000015");
+        driver.findElement(By.id(Constants_03.achName)).sendKeys("raj");
+        driver.findElement(By.xpath(Constants_03.submitPaymentButton)).click();
+        driver.findElement(By.id(Constants_03.submitPaymentOk)).click();
+    }
+}

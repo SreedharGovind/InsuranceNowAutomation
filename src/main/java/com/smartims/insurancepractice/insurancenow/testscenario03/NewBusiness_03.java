@@ -1,15 +1,15 @@
 package com.smartims.insurancepractice.insurancenow.testscenario03;
 
 import com.smartims.insurancepractice.insurancenow.commonClasses.ConstantsClass;
-import com.smartims.insurancepractice.insurancenow.voClasses.NewBussinesVO;
+import com.smartims.insurancepractice.insurancenow.voClasses.NewBusinessVO;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.io.IOException;
 
 public class NewBusiness_03 {
-    public void getNewBussines(ChromeDriver driver) throws IOException,InterruptedException{
-        NewBussinesVO nbvo = new NewBussinesVO();
+    public void getNewBussines(ChromeDriver driver) throws IOException, InterruptedException {
+        NewBusinessVO nbvo = new NewBusinessVO();
         nbvo.setNewBusinessEffectiveDate(ExcelUtils_03.getCellValueByLabel("newBusinessEffectiveDate"));
         nbvo.setNewBusinessState(ExcelUtils_03.getCellValueByLabel("newBusinessState"));
         nbvo.setNewBusinessProgramType(ExcelUtils_03.getCellValueByLabel("newBusinessProgramType"));
