@@ -1,13 +1,14 @@
-package com.smartims.insurancepractice.insurancenow.testscenario03;
+package com.smartims.insurancepractice.insurancenow.testscenario03.testcase05;
 
 import com.smartims.insurancepractice.insurancenow.commonClasses.ConstantsClass;
+import com.smartims.insurancepractice.insurancenow.testscenario03.ExcelUtils_03;
 import com.smartims.insurancepractice.insurancenow.voClasses.NewBusinessVO;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.io.IOException;
 
-public class NewBusiness_03 {
+public class NewBusiness_05 {
     public void getNewBussines(ChromeDriver driver) throws IOException, InterruptedException {
         NewBusinessVO nbvo = new NewBusinessVO();
         nbvo.setNewBusinessEffectiveDate(ExcelUtils_03.getCellValueByLabel("newBusinessEffectiveDate"));
@@ -159,7 +160,5 @@ public class NewBusiness_03 {
 //        Issue the Bussiness
         driver.findElement(By.xpath("//*[@id=\"Process\"]/span")).click();
 
-        Thread.sleep(5000);
     }
-
 }
