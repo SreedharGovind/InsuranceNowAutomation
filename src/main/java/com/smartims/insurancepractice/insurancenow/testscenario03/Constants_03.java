@@ -114,6 +114,7 @@ public class Constants_03 {
     public static final String makePayment = "/html/body/main/form/div[1]/aside[2]/div[2]/div[1]/a[3]/span";
     public static final String pay = "QuickAction_SubmitPayment";
     public static final String newACH = "PaymentTypeCd_1";
+    //public static final String bankAccount= "PaymentTypeCd_1";
     public static final String newPremiumAmount = "PremiumReceiptAmt";
     public static final String totalAmount = "ReceiptAmt";
     public static final String enterCreditCardDetailsId = "EnterCreditCardDetails";
