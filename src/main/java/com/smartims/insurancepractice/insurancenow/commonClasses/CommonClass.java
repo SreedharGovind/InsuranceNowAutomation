@@ -15,6 +15,7 @@ import java.time.Duration;
 public class CommonClass {
 
     public static ChromeDriver getchromedriver() throws IOException {
+
         ChromeOptions co = new ChromeOptions();
         co.addArguments("--remote-allow-origins=*");
         ChromeDriver driver = new ChromeDriver(co);
@@ -23,8 +24,8 @@ public class CommonClass {
         driver.manage().window().maximize();
         driver.get(ConstantsClass.localHostUrl);
         CredentialsVO cvo = new CredentialsVO();
-        cvo.setUserName(ExcelUtils_TS02.getCellValueByLabel("userName"));
-        cvo.setPassword(ExcelUtils_TS02.getCellValueByLabel("password"));
+        cvo.setUserName(ExcelUtilsCredentials.getCellValueByLabel("userName"));
+        cvo.setPassword(ExcelUtilsCredentials.getCellValueByLabel("password"));
         driver.findElement(By.id(ConstantsClass.username)).sendKeys(cvo.getUserName());
         driver.findElement(By.id(ConstantsClass.password)).sendKeys(cvo.getPassword(), Keys.ENTER);
         return driver;
