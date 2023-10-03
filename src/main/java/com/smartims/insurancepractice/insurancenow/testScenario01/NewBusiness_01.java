@@ -18,6 +18,7 @@ public class NewBusiness_01 {
         nbvo.setNewBusinessTerm(ExcelUtils_01.getCellValueByLabel("newBusinessTerm"));
         nbvo.setNewBusinessProducerCode(ExcelUtils_01.getCellValueByLabel("newBusinessProducerCode"));
         nbvo.setNewBusinessDoesTheInsuredHavePriorInsuranceCoverageWithNoLapseOrALapseOfLessThan30Days(ExcelUtils_01.getCellValueByLabel("newBusinessDoesTheInsuredHavePriorInsuranceCoverageWithNoLapseOrALapseOfLessThan30Days"));
+        nbvo.setNewBusinessHastheinsuredoperatedanuninsuredmotorvehicleformorethan30daysinthepast12months(ExcelUtils_01.getCellValueByLabel("newBusinessHastheinsuredoperatedanuninsuredmotorvehicleformorethan30daysinthepast12months"));
         nbvo.setNewBusinessEntityType(ExcelUtils_01.getCellValueByLabel("newBusinessEntityType"));
         nbvo.setNewBusinessIndividualFirst(ExcelUtils_01.getCellValueByLabel("newBusinessIndividualFirst"));
         nbvo.setNewBusinessIndividualMiddle(ExcelUtils_01.getCellValueByLabel("newBusinessIndividualMiddle"));
@@ -73,7 +74,7 @@ public class NewBusiness_01 {
         driver.findElement(By.id(ConstantsClass.newBusinessProducerCode)).sendKeys(nbvo.getNewBusinessProducerCode());
         driver.findElement(By.id(ConstantsClass.newBusinessProducerLookup)).click();
         driver.findElement(By.name(ConstantsClass.basicPolicyNolapse)).sendKeys(nbvo.getNewBusinessDoesTheInsuredHavePriorInsuranceCoverageWithNoLapseOrALapseOfLessThan30Days());
-        driver.findElement(By.name(ConstantsClass.basicPolicyUninsuredMorethanThirtyDays)).sendKeys("No");
+        driver.findElement(By.name(ConstantsClass.basicPolicyUninsuredMorethanThirtyDays)).sendKeys(nbvo.getNewBusinessHastheinsuredoperatedanuninsuredmotorvehicleformorethan30daysinthepast12months());
 //      Insured information
         driver.findElement(By.name(ConstantsClass.newBusinessEntityType)).sendKeys(nbvo.getNewBusinessEntityType());
         driver.findElement(By.name(ConstantsClass.newBusinessInsuredFirstName)).sendKeys(nbvo.getNewBusinessIndividualFirst());

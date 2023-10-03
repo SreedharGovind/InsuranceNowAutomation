@@ -9,7 +9,17 @@ public class NewBusinessVO {
     String newBusinessProducerCode;
     String newBusinessExpirationDate;
     String newBusinessDoesTheInsuredHavePriorInsuranceCoverageWithNoLapseOrALapseOfLessThan30Days;
+    String newBusinessHastheinsuredoperatedanuninsuredmotorvehicleformorethan30daysinthepast12months;
     String newBusinessNamedNonOwnerPolicy;
+
+    public String getNewBusinessHastheinsuredoperatedanuninsuredmotorvehicleformorethan30daysinthepast12months() {
+        return newBusinessHastheinsuredoperatedanuninsuredmotorvehicleformorethan30daysinthepast12months;
+    }
+
+    public void setNewBusinessHastheinsuredoperatedanuninsuredmotorvehicleformorethan30daysinthepast12months(String newBusinessHastheinsuredoperatedanuninsuredmotorvehicleformorethan30daysinthepast12months) {
+        this.newBusinessHastheinsuredoperatedanuninsuredmotorvehicleformorethan30daysinthepast12months = newBusinessHastheinsuredoperatedanuninsuredmotorvehicleformorethan30daysinthepast12months;
+    }
+
     String newBusinessContentsPlusRentersEndorsement;
     String newBusinessEntityType;
     String newBusinessIndividualFirst;
