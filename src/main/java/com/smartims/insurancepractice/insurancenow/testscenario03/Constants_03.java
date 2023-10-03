@@ -108,17 +108,25 @@ public class Constants_03 {
     public static final String processButton = "//*[@id=\"Process\"]/span";
 
 
-
-
     public static final String billingTabId = "Tab_Billing";
     public static final String adminTabId = "Menu_Admin";
     public static final String changeDateId = "Menu_Admin_ChangeDate";
- public static final String  makePayment= "/html/body/main/form/div[1]/aside[2]/div[2]/div[1]/a[3]/span";
- public static final String pay = "QuickAction_SubmitPayment";
- public static final String newCreditCardId= "PaymentTypeCd_3";
- public static final String  newPremiumAmount= "PremiumReceiptAmt";
- public static final String totalAmount= "ReceiptAmt";
+    public static final String makePayment = "/html/body/main/form/div[1]/aside[2]/div[2]/div[1]/a[3]/span";
+    public static final String pay = "QuickAction_SubmitPayment";
+    public static final String newACH = "PaymentTypeCd_1";
+    public static final String newPremiumAmount = "PremiumReceiptAmt";
+    public static final String totalAmount = "ReceiptAmt";
+    public static final String enterCreditCardDetailsId = "EnterCreditCardDetails";
+    public static final String cardBillingAddressSubmitButton = "/html/body/form/div[5]/div/button";
+    public static final String bankAccountEntryType = "ACHStandardEntryClassCd";
+    public static final String bankAccountType = "ACHBankAccountTypeCd";
+    public static final String accountNumber = "ACHBankAccountNumber";
+    public static final String routingNumber = "ACHRoutingNumber";
+    public static final String achName = "ACHName";
+    public static final String submitPaymentButton = "/html/body/main/form/div[1]/div/div[2]/div/div[1]/div/div/div/div[3]/a/span";
+    public static final String submitPaymentOk = "dialogOK";
 // public static final String = "";
 // public static final String = "";
 // public static final String = "";
+
 }
