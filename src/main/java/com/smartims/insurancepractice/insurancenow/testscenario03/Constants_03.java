@@ -130,4 +130,8 @@ public class Constants_03 {
 // public static final String = "";
 // public static final String = "";
 
+    //Batch Jobs
+    // public static final String = "";
+
+
 }

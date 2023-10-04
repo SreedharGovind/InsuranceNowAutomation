@@ -7,6 +7,7 @@ public class AllTransactions_06 {
 
     public static void main(String[] args) throws Exception {
         ChromeDriver driver = CommonClass.getchromedriver();
+
         NewBusiness_06 nb = new NewBusiness_06();
         nb.getNewBussines(driver);
 
@@ -14,6 +15,6 @@ public class AllTransactions_06 {
         tc.testCase_06(driver);
 
         BatchJob_06 b = new BatchJob_06();
-        b.batchJob( driver);
+        b.batchJob(driver);
     }
 }
