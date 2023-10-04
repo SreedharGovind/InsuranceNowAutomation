@@ -104,6 +104,9 @@ public class ConstantsClass {
     public static final String search = "Search";
     public static final String privatePassengerAutoCheckbox = "LinkReferenceInclude_0";
     public static final String navigateNonDriverParty = "Navigate_NonDriverParty";
+    public static final String wizardVehicle = "Wizard_Vehicles";
+    public static final String addVehicleButtonSidebar = "Navigate_AddRisk_PrivatePassengerAuto";
+    public static final String completeEndorsementTransactionButton = "//*[@id=\"Process\"]/span";
     //    public static final String  = ;
     //    public static final String  = ;
     //    public static final String  = ;
