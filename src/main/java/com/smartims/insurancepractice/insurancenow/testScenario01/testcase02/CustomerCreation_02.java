@@ -1,5 +1,6 @@
-package com.smartims.insurancepractice.insurancenow.testScenario01;
+package com.smartims.insurancepractice.insurancenow.testScenario01.testcase02;
 
+import com.smartims.insurancepractice.insurancenow.commonClasses.ConstantsClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -7,7 +8,7 @@ import org.openqa.selenium.interactions.Actions;
 
 import java.io.IOException;
 
-public class CustomerCreation {
+public class CustomerCreation_02 {
     public void getCutomerCreation(ChromeDriver driver) throws IOException,InterruptedException{
 
         Actions action = new Actions(driver);
@@ -43,6 +44,7 @@ public class CustomerCreation {
         driver.findElement(By.id("BasicPolicy.ProgramType")).sendKeys("Texas Ranger");
         driver.findElement(By.id("Continue")).click();
         driver.findElement(By.id("ProviderNumber")).sendKeys("QATeam");
+        driver.findElement(By.id(ConstantsClass.continueButton)).click();
         driver.findElement(By.id("BasicPolicy.NoLapse")).sendKeys("No");
         driver.findElement(By.id("BasicPolicy.UninsuredMoreThanThirtyDays")).sendKeys("No");
     }

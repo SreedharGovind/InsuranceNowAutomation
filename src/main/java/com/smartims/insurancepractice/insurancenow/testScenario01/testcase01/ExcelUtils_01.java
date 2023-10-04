@@ -1,4 +1,4 @@
-package com.smartims.insurancepractice.insurancenow.testScenario01;
+package com.smartims.insurancepractice.insurancenow.testScenario01.testcase01;
 
 
 import org.apache.poi.ss.usermodel.*;
