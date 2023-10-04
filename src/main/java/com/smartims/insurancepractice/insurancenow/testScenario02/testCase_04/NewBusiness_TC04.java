@@ -80,13 +80,9 @@ public class NewBusiness_TC04 {
         nvo.setNewBusinessUWQuestions(ExcelUtils_03.getCellValueByLabel("newBusinessUWQuestions"));
         nvo.setNewBusinessPaymentType(ExcelUtils_03.getCellValueByLabel("newBusinessPayment Type"));
 
-        driver.findElement(By.xpath(ConstantsClass.newQuoteButton)).click();
-        Select statecode = new Select(driver.findElement(By.id(ConstantsClass.newBusinessStateCode)));
-        statecode.selectByVisibleText("Texas");
-        driver.findElement(By.id(ConstantsClass.newBusinessEffectiveDate)).sendKeys(nvo.getNewBusinessEffectiveDate());
-        Select programType = new Select(driver.findElement(By.id(ConstantsClass.newBusinessProgramType)));
-        programType.selectByVisibleText(nvo.getNewBusinessProgramType());
-        driver.findElement(By.id(ConstantsClass.quickActionNewQuote)).click();
+        driver.findElement(By.id(ConstantsClass.existingCustomerEffectiveDt)).sendKeys("10/03/2023");
+        driver.findElement(By.id(ConstantsClass.basicPolicyControllingStateCode)).sendKeys("Texas");
+        driver.findElement(By.id(ConstantsClass.existingCustomerProgramType)).sendKeys("Texas Ranger");
         driver.findElement(By.id(ConstantsClass.continueButton)).click();
         WebElement producerNumber = driver.findElement(By.id(ConstantsClass.newBusinessProducerCode));
         actions.moveToElement(producerNumber).perform();

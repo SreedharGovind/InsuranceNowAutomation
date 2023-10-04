@@ -37,8 +37,8 @@ public class CustomerCreation_04 {
         driver.findElement(By.id(ConstantsClass.newCustomerEmailAddress)).sendKeys("Email@gmail.com");
         driver.findElement(By.id(ConstantsClass.newCustomerBestWayToContact)).sendKeys("Email");
         driver.findElement(By.id(ConstantsClass.newCustomerBestTimeToContact)).sendKeys("Morning");
-        driver.findElement(By.id(ConstantsClass.saveButton)).click();
-        driver.findElement(By.id(ConstantsClass.saveAndQuoteButton)).click();
+        driver.findElement(By.xpath(ConstantsClass.saveButton)).click();
+        driver.findElement(By.xpath(ConstantsClass.saveAndQuoteButton)).click();
 
 
     }
