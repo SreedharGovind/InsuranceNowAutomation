@@ -6,10 +6,12 @@ import com.smartims.insurancepractice.insurancenow.voClasses.NewBusinessVO;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.awt.*;
+import java.awt.event.KeyEvent;
 import java.io.IOException;
 
 public class NewBusiness_05 {
-    public void getNewBussines(ChromeDriver driver) throws IOException, InterruptedException {
+    public void getNewBussines(ChromeDriver driver) throws IOException, InterruptedException, AWTException {
         NewBusinessVO nbvo = new NewBusinessVO();
         nbvo.setNewBusinessEffectiveDate(ExcelUtils_03.getCellValueByLabel("newBusinessEffectiveDate"));
         nbvo.setNewBusinessState(ExcelUtils_03.getCellValueByLabel("newBusinessState"));
@@ -159,6 +161,21 @@ public class NewBusiness_05 {
         driver.findElement(By.id("TransactionInfo.PaymentTypeCd")).sendKeys(nbvo.getNewBusinessPaymentType());
 //        Issue the Bussiness
         driver.findElement(By.xpath("//*[@id=\"Process\"]/span")).click();
+        Robot robot = new Robot();
+        Thread.sleep(30000);
 
+        robot.keyPress(KeyEvent.VK_CONTROL); // Press CTRL key
+        robot.keyPress(KeyEvent.VK_W);       // Press W key
+
+// Release the keys in reverse order to ensure they are released properly
+        robot.keyRelease(KeyEvent.VK_W);       // Release W key
+        robot.keyRelease(KeyEvent.VK_CONTROL);
+
+        robot.keyPress(KeyEvent.VK_CONTROL); // Press CTRL key
+        robot.keyPress(KeyEvent.VK_W);       // Press W key
+
+// Release the keys in reverse order to ensure they are released properly
+        robot.keyRelease(KeyEvent.VK_W);       // Release W key
+        robot.keyRelease(KeyEvent.VK_CONTROL);
     }
 }
