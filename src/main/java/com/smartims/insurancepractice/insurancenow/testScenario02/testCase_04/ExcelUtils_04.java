@@ -11,7 +11,7 @@ public class ExcelUtils_04 {
     public static String getCellValueByLabel(String label) throws IOException {
         String excelFilePath = "INOW Automation Data Sheet.xlsx";
         FileInputStream file = new FileInputStream(new File(excelFilePath));
-        String sheetName = "TC_04";
+        String sheetName = "TS_02";
         Workbook workbook = WorkbookFactory.create(file);
         Sheet sheet = workbook.getSheet(sheetName);
         try {
