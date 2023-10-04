@@ -31,7 +31,7 @@ public class CancellationNotice_05 {
         WebElement policyTab = driver.findElement(By.xpath(Constants_03.policySearchTab));
         actions.moveToElement(policyTab).perform();
         policyTab.click();
-        driver.findElement(By.xpath(Constants_03.policyNumberTextField)).sendKeys("PA0000036-01");
+        driver.findElement(By.xpath(Constants_03.policyNumberTextField)).sendKeys("PA0000041-01");
         WebElement searchButton = driver.findElement(By.xpath(Constants_03.searchButton));
         actions.moveToElement(searchButton).perform();
         searchButton.click();
