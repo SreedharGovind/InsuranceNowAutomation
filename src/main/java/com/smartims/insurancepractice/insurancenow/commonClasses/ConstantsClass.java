@@ -4,11 +4,36 @@ public class ConstantsClass {
     public static final String localHostUrl = "http://localhost:8080/innovation";
     public static final String username = "j_username";
     public static final String password = "j_password";
+
+    public static final String menuPolicyNewCustomerAndQuote = "Menu_Policy_NewCustomerAndQuote";
+    public static final String newCustomerEntityTypeCode = "Customer.EntityTypeCd";
+    public static final String newCustomerGivenName = "CustomerName.GivenName";
+    public static final String newCustomerSurname = "CustomerName.Surname";
+    public static final String newCustomerDateOfBirth = "CustomerPersonal.BirthDt";
+
+    public static final String menuPolicyButton = "//*[@id=\"Menu_Policy\"]";
+    public static final String newCustomerResetCommercialName = "ResetCommercialName";
+    public static final String newCustomerResetIndexName = "ResetIndexName";
+    public static final String newCustomerAddressPrimaryNumber = "CustomerLookupAddr.PrimaryNumber";
+    public static final String newCustomerAddressStreetName = "CustomerLookupAddr.StreetName";
+    public static final String newCustomerCity = "CustomerLookupAddr.City";
+    public static final String newCustomerState = "CustomerLookupAddr.StateProvCd";
+    public static final String newCustomerPostalCode = "CustomerLookupAddr.PostalCode";
+    public static final String newCustomerAddressVerifyingImg = "CustomerLookupAddr.addrVerifyImg";
+    public static final String newCustomerDefaultAddress = "DefaultAddress";
+    public static final String newCustomerPrimaryPhoneName = "CustomerPhonePrimary.PhoneName";
+    public static final String newCustomerPrimaryPhoneNumber = "CustomerPhonePrimary.PhoneNumber";
+    public static final String newCustomerEmailAddress = "CustomerEmail.EmailAddr";
+    public static final String copyMailingAddress = "CopyAddress";
+    public static final String newCustomerBestWayToContact = "CustomerPersonal.BestWayToContact";
+    public static final String newCustomerBestTimeToContact = "CustomerPersonal.BestTimeToContact";
+    public static final String saveAndQuoteButton = "//*[@id=\"SaveAndQuote\"]/span";
     public static final String newQuoteButton = "//*[@id=\"QuickAction_NewQuote_Holder\"]/span";
     public static final String newBusinessStateCode = "QuickAction_StateCd";
     public static final String newBusinessEffectiveDate = "QuickAction_EffectiveDt";
 
     public static final String newBusinessProgramType = "QuickAction_ProgramType";
+    public static final String basicPolicyControllingStateCode = "BasicPolicy.ControllingStateCd";
     public static final String quickActionNewQuote = "QuickAction_NewQuote";
     public static final String continueButton = "Continue";
     public static final String newBusinessProducerCode = "ProviderNumber";
@@ -97,8 +122,7 @@ public class ConstantsClass {
     public static final String addAdditionalInterest = "AddAdditionalInterest";
     public static final String endorsementAICode = "AI.InterestCd";
     public static final String additionalInterestTypeCode = "AI.InterestTypeCd";
-
-    public static final String saveButton = "Save";
+    public static final String saveButton = "//*[@id=\"Save\"]/span";
     public static final String finishButton = "Closeout";
     public static final String aIDetailLookup = "AIDetail_Lookup";
     public static final String search = "Search";
@@ -113,8 +137,6 @@ public class ConstantsClass {
     //    public static final String  = ;
     //    public static final String  = ;
     //    public static final String  = ;
-
-
     public static final String policySearchTab = "//*[@id=\"AdvancedSearchPolicy\"]";
     public static final String policyNumberTextField = "//*[@id=\"PolicyNumber\"]";
     public static final String searchButton = "//*[@id=\"SearchPolicy\"]";
@@ -131,4 +153,18 @@ public class ConstantsClass {
     public static final String cancellationType = "//*[@id=\"CancelRequestedByCd\"]";
     public static final String additionalNoticeText = "//*[@id=\"TransactionLongDescription\"]";
     public static final String processButton = "//*[@id=\"Process\"]/span";
+    //    Exixting customer
+    public static final String existingCustomer = "//*[@id=\"Menu_Policy\"]";
+    public static final String existingCustomerPolicyProcessing = "Menu_Policy_PolicyProcessing";
+    public static final String existingCustomerCustomerSearchBy = "CustomerSearchBy";
+    public static final String existingCustomerCustomerSearchText = "CustomerSearchText";
+    public static final String existingCustomerSearch = "Search";
+    public static final String existingCustomerCustomerList = "//*[@id=\"CustomerList\"]/table/tbody/tr[2]/td[2]/a";
+    public static final String existingCustomerNewQuote = "NewQuote";
+    public static final String existingCustomerControllingStateCd = "BasicPolicy.ControllingStateCd";
+    public static final String existingCustomerEffectiveDt = "BasicPolicy.EffectiveDt";
+    public static final String existingCustomerProgramType = "BasicPolicy.ProgramType";
+
+
 }
+

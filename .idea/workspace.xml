@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7284be7a-effc-4caf-8a27-66144845ab51" name="Changes" comment="Merge branch 'main' of https://github.com/SreedharGovind/InsuranceNowAutomation into feature/BalaKrishna&#10;&#10;# Conflicts:&#10;#&#9;INOW Automation Data Sheet.xlsx">
+    <list default="true" id="7284be7a-effc-4caf-8a27-66144845ab51" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/smartims/insurancepractice/insurancenow/testscenario03/testcase05/AllTransactions_05.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/smartims/insurancepractice/insurancenow/testscenario03/testcase05/CancellationNotice_05.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/smartims/insurancepractice/insurancenow/testscenario03/testcase05/NewBusiness_05.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/smartims/insurancepractice/insurancenow/testscenario03/testcase06/AllTransactions_06.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartims/insurancepractice/insurancenow/testScenario02/ExcelUtils_TS02.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartims/insurancepractice/insurancenow/testscenario03/Constants_03.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartims/insurancepractice/insurancenow/testscenario03/testcase05/AllTransactions_05.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartims/insurancepractice/insurancenow/testscenario03/testcase05/CancellationNotice_05.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartims/insurancepractice/insurancenow/testscenario03/testcase05/NewBusiness_05.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartims/insurancepractice/insurancenow/testscenario03/testcase06/AllTransactions_06.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/INOW Automation Data Sheet.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/INOW Automation Data Sheet.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/smartims/insurancepractice/insurancenow/testscenario03/testcase06/Payment_06.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/smartims/insurancepractice/insurancenow/testscenario03/testcase06/Payment_06.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartims/insurancepractice/insurancenow/testScenario01/testcase02/CustomerCreation_02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartims/insurancepractice/insurancenow/testScenario01/testcase02/CustomerCreation_02.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +30,31 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="Merge branch 'main' of https://github.com/SreedharGovind/InsuranceNowAutomation into feature/BalaKrishna&#10;&#10;# Conflicts:&#10;#&#9;INOW Automation Data Sheet.xlsx">
+      <option name="closed" value="true" />
+      <created>1696405630802</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1696405630802</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Merge branch 'main' of https://github.com/SreedharGovind/InsuranceNowAutomation into feature/BalaKrishna&#10;&#10;# Conflicts:&#10;#&#9;INOW Automation Data Sheet.xlsx">
+      <option name="closed" value="true" />
+      <created>1696405943757</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1696405943757</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Merge branch 'main' of https://github.com/SreedharGovind/InsuranceNowAutomation into feature/BalaKrishna&#10;&#10;# Conflicts:&#10;#&#9;INOW Automation Data Sheet.xlsx">
+      <option name="closed" value="true" />
+      <created>1696410807767</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1696410807767</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

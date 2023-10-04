@@ -2,6 +2,7 @@ package com.smartims.insurancepractice.insurancenow.testScenario01.testcase02;
 
 import com.smartims.insurancepractice.insurancenow.commonClasses.ConstantsClass;
 import com.smartims.insurancepractice.insurancenow.testScenario01.testcase01.ExcelUtils_01;
+import com.smartims.insurancepractice.insurancenow.voClasses.ExistingCustomerVO;
 import com.smartims.insurancepractice.insurancenow.voClasses.NewBusinessVO;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -14,6 +15,15 @@ public class NewBusiness_ExistingCustomer_02 {
     public void getNewBusiness_ExistingCustomer(ChromeDriver driver) throws InterruptedException, IOException {
         Actions action = new Actions(driver);
         NewBusinessVO nbvo = new NewBusinessVO();
+        ExistingCustomerVO evo = new ExistingCustomerVO();
+        evo.setExistingCustomerSearchBy(ExcelUtils_01.getCellValueByLabel("existingCustomerSearchBy"));
+        evo.setExistingCustomerSearchText(ExcelUtils_01.getCellValueByLabel("existingCustomerSearchText"));
+        evo.setExistingCustomerControllingStateCd(ExcelUtils_01.getCellValueByLabel("existingCustomerControllingStateCd"));
+        evo.setExistingCustomerEffectiveDt(ExcelUtils_01.getCellValueByLabel("existingCustomerEffectiveDt"));
+        evo.setExistingCustomerProgramType(ExcelUtils_01.getCellValueByLabel("existingCustomerProgramType"));
+        nbvo.setNewBusinessProducerCode(ExcelUtils_01.getCellValueByLabel("newBusinessProducerCode"));
+        nbvo.setNewBusinessDoesTheInsuredHavePriorInsuranceCoverageWithNoLapseOrALapseOfLessThan30Days(ExcelUtils_01.getCellValueByLabel("newBusinessDoesTheInsuredHavePriorInsuranceCoverageWithNoLapseOrALapseOfLessThan30Days"));
+        nbvo.setNewBusinessHastheinsuredoperatedanuninsuredmotorvehicleformorethan30daysinthepast12months(ExcelUtils_01.getCellValueByLabel("newBusinessHastheinsuredoperatedanuninsuredmotorvehicleformorethan30daysinthepast12months"));
         nbvo.setNewBusinessBodilyInjuryPerPersonPerAccident(ExcelUtils_01.getCellValueByLabel("newBusinessBodilyInjuryPerPersonPerAccident"));
         nbvo.setNewBusinessPropertyDamage(ExcelUtils_01.getCellValueByLabel("newBusinessPropertyDamage"));
         nbvo.setNewBusinessMedicalPayments(ExcelUtils_01.getCellValueByLabel("newBusinessMedicalPayments"));
@@ -45,23 +55,23 @@ public class NewBusiness_ExistingCustomer_02 {
         nbvo.setNewBusinessUWQuestions(ExcelUtils_01.getCellValueByLabel("newBusinessUWQuestions"));
         nbvo.setNewBusinessPaymentType(ExcelUtils_01.getCellValueByLabel("newBusinessPaymentType"));
 
-        WebElement customer = driver.findElement(By.xpath("//*[@id=\"Menu_Policy\"]"));
+        WebElement customer = driver.findElement(By.xpath(ConstantsClass.existingCustomer));
         action.moveToElement(customer).perform();
-        driver.findElement(By.id("Menu_Policy_PolicyProcessing")).click();
-        driver.findElement(By.id("CustomerSearchBy")).sendKeys("Customer Number");
-        driver.findElement(By.id("CustomerSearchText")).sendKeys("30");
-        driver.findElement(By.id("Search")).click();
-        driver.findElement(By.xpath("//*[@id=\"CustomerList\"]/table/tbody/tr[2]/td[2]/a")).click();
+        driver.findElement(By.id(ConstantsClass.existingCustomerPolicyProcessing)).click();
+        driver.findElement(By.id(ConstantsClass.existingCustomerCustomerSearchBy)).sendKeys(evo.getExistingCustomerSearchBy());
+        driver.findElement(By.id(ConstantsClass.existingCustomerCustomerSearchText)).sendKeys(evo.getExistingCustomerSearchText());
+        driver.findElement(By.id(ConstantsClass.existingCustomerSearch)).click();
+        driver.findElement(By.xpath(ConstantsClass.existingCustomerCustomerList)).click();
 //        New quote From Existing customer
-        driver.findElement(By.id("NewQuote")).click();
-        driver.findElement(By.id("BasicPolicy.ControllingStateCd")).sendKeys("Texas");
-        driver.findElement(By.id("BasicPolicy.EffectiveDt")).sendKeys("09/13/2023");
-        driver.findElement(By.id("BasicPolicy.ProgramType")).sendKeys("Texas Ranger");
+        driver.findElement(By.id(ConstantsClass.existingCustomerNewQuote)).click();
+        driver.findElement(By.id(ConstantsClass.existingCustomerControllingStateCd)).sendKeys(evo.getExistingCustomerControllingStateCd());
+        driver.findElement(By.id(ConstantsClass.existingCustomerEffectiveDt)).sendKeys(evo.getExistingCustomerEffectiveDt());
+        driver.findElement(By.id(ConstantsClass.existingCustomerProgramType)).sendKeys(evo.getExistingCustomerProgramType());
         driver.findElement(By.id(ConstantsClass.continueButton)).click();
-        driver.findElement(By.id(ConstantsClass.newBusinessProducerCode)).sendKeys("QATeam");
+        driver.findElement(By.id(ConstantsClass.newBusinessProducerCode)).sendKeys(nbvo.getNewBusinessProducerCode());
         driver.findElement(By.id(ConstantsClass.newBusinessProducerLookup)).click();
-        driver.findElement(By.id(ConstantsClass.basicPolicyNolapse)).sendKeys("No");
-        driver.findElement(By.id(ConstantsClass.basicPolicyUninsuredMorethanThirtyDays)).sendKeys("No");
+        driver.findElement(By.id(ConstantsClass.basicPolicyNolapse)).sendKeys(nbvo.getNewBusinessDoesTheInsuredHavePriorInsuranceCoverageWithNoLapseOrALapseOfLessThan30Days());
+        driver.findElement(By.id(ConstantsClass.basicPolicyUninsuredMorethanThirtyDays)).sendKeys(nbvo.getNewBusinessHastheinsuredoperatedanuninsuredmotorvehicleformorethan30daysinthepast12months());
         driver.findElement(By.id(ConstantsClass.nextPageBottom)).click();
 //      Automobile Policy General Screen
         driver.findElement(By.name(ConstantsClass.newBusinessBodilyInjuryLimit)).sendKeys(nbvo.getNewBusinessBodilyInjuryPerPersonPerAccident());
