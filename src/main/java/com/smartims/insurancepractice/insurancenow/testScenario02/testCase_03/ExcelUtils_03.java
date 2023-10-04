@@ -1,4 +1,4 @@
-package com.smartims.insurancepractice.insurancenow.testScenario02;
+package com.smartims.insurancepractice.insurancenow.testScenario02.testCase_03;
 
 import org.apache.poi.ss.usermodel.*;
 
@@ -6,7 +6,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 
-public class ExcelUtils_TS02 {
+public class ExcelUtils_03 {
     public static String getCellValueByLabel(String label) throws IOException {
         String excelFilePath = "INOW Automation Data Sheet.xlsx";
         FileInputStream file = new FileInputStream(new File(excelFilePath));

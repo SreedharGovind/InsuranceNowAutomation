@@ -1,4 +1,4 @@
-package com.smartims.insurancepractice.insurancenow.testScenario02;
+package com.smartims.insurancepractice.insurancenow.testScenario02.testCase_03;
 
 import com.smartims.insurancepractice.insurancenow.commonClasses.ConstantsClass;
 import com.smartims.insurancepractice.insurancenow.voClasses.NewBusinessVO;
@@ -11,73 +11,73 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.io.IOException;
 
-public class NewBusiness_TS02 {
-    void newBusiness_TS02(ChromeDriver driver, Actions actions) throws IOException, InterruptedException {
+public class NewBusiness_03 {
+    void newBusiness_03(ChromeDriver driver, Actions actions) throws IOException, InterruptedException {
         NewBusinessVO nvo = new NewBusinessVO();
 
-        nvo.setNewBusinessEffectiveDate(ExcelUtils_TS02.getCellValueByLabel("newBusinessEffectiveDate"));
-        nvo.setNewBusinessState(ExcelUtils_TS02.getCellValueByLabel("newBusinessState"));
-        nvo.setNewBusinessProgramType(ExcelUtils_TS02.getCellValueByLabel("newBusinessProgramType"));
-        nvo.setNewBusinessProduct(ExcelUtils_TS02.getCellValueByLabel("newBusinessProduct"));
-        nvo.setNewBusinessTerm(ExcelUtils_TS02.getCellValueByLabel("newBusinessTerm"));
-        nvo.setNewBusinessProducerCode(ExcelUtils_TS02.getCellValueByLabel("newBusinessProducerCode"));
+        nvo.setNewBusinessEffectiveDate(ExcelUtils_03.getCellValueByLabel("newBusinessEffectiveDate"));
+        nvo.setNewBusinessState(ExcelUtils_03.getCellValueByLabel("newBusinessState"));
+        nvo.setNewBusinessProgramType(ExcelUtils_03.getCellValueByLabel("newBusinessProgramType"));
+        nvo.setNewBusinessProduct(ExcelUtils_03.getCellValueByLabel("newBusinessProduct"));
+        nvo.setNewBusinessTerm(ExcelUtils_03.getCellValueByLabel("newBusinessTerm"));
+        nvo.setNewBusinessProducerCode(ExcelUtils_03.getCellValueByLabel("newBusinessProducerCode"));
         nvo.setNewBusinessDoesTheInsuredHavePriorInsuranceCoverageWithNoLapseOrALapseOfLessThan30Days(
-                ExcelUtils_TS02.getCellValueByLabel(
+                ExcelUtils_03.getCellValueByLabel(
                         "newBusinessDoesTheInsuredHavePriorInsuranceCoverageWithNoLapseOrALapseOfLessThan30Days"));
-        nvo.setNewBusinessEntityType(ExcelUtils_TS02.getCellValueByLabel("newBusinessEntityType"));
-        nvo.setNewBusinessIndividualFirst(ExcelUtils_TS02.getCellValueByLabel("newBusinessIndividualFirst"));
-        nvo.setNewBusinessIndividualLast(ExcelUtils_TS02.getCellValueByLabel("newBusinessIndividualLast"));
-        nvo.setNewBusinessIndividualBirthDate(ExcelUtils_TS02.getCellValueByLabel("newBusinessIndividualBirthDate"));
-        nvo.setNewBusinessMailingAddress(ExcelUtils_TS02.getCellValueByLabel("newBusinessMailingAddress"));
-        nvo.setNewBusinessMailingAddressCity(ExcelUtils_TS02.getCellValueByLabel("newBusinessMailingAddressCity"));
-        nvo.setNewBusinessMailingAddressZip(ExcelUtils_TS02.getCellValueByLabel("newBusinessMailingAddressZip"));
-        nvo.setNewBusinessMailingAddressState(ExcelUtils_TS02.getCellValueByLabel("newBusinessMailingAddressState"));
+        nvo.setNewBusinessEntityType(ExcelUtils_03.getCellValueByLabel("newBusinessEntityType"));
+        nvo.setNewBusinessIndividualFirst(ExcelUtils_03.getCellValueByLabel("newBusinessIndividualFirst"));
+        nvo.setNewBusinessIndividualLast(ExcelUtils_03.getCellValueByLabel("newBusinessIndividualLast"));
+        nvo.setNewBusinessIndividualBirthDate(ExcelUtils_03.getCellValueByLabel("newBusinessIndividualBirthDate"));
+        nvo.setNewBusinessMailingAddress(ExcelUtils_03.getCellValueByLabel("newBusinessMailingAddress"));
+        nvo.setNewBusinessMailingAddressCity(ExcelUtils_03.getCellValueByLabel("newBusinessMailingAddressCity"));
+        nvo.setNewBusinessMailingAddressZip(ExcelUtils_03.getCellValueByLabel("newBusinessMailingAddressZip"));
+        nvo.setNewBusinessMailingAddressState(ExcelUtils_03.getCellValueByLabel("newBusinessMailingAddressState"));
         nvo.setNewBusinessMailingAddressVerifyAddress(
-                ExcelUtils_TS02.getCellValueByLabel("newBusinessMailingAddressVerifyAddress"));
-        nvo.setNewBusinessEmail(ExcelUtils_TS02.getCellValueByLabel("newBusinessEmail"));
-        nvo.setNewBusinessBestWaytoContact(ExcelUtils_TS02.getCellValueByLabel("newBusinessBestWaytoContact"));
-        nvo.setNewBusinessBestTimetoContact(ExcelUtils_TS02.getCellValueByLabel("newBusinessBestWaytoContact"));
+                ExcelUtils_03.getCellValueByLabel("newBusinessMailingAddressVerifyAddress"));
+        nvo.setNewBusinessEmail(ExcelUtils_03.getCellValueByLabel("newBusinessEmail"));
+        nvo.setNewBusinessBestWaytoContact(ExcelUtils_03.getCellValueByLabel("newBusinessBestWaytoContact"));
+        nvo.setNewBusinessBestTimetoContact(ExcelUtils_03.getCellValueByLabel("newBusinessBestWaytoContact"));
         nvo.setNewBusinessBodilyInjuryPerPersonPerAccident(
-                ExcelUtils_TS02.getCellValueByLabel("newBusinessBodilyInjuryPerPersonPerAccident"));
-        nvo.setNewBusinessPropertyDamage(ExcelUtils_TS02.getCellValueByLabel("newBusinessPropertyDamage"));
-        nvo.setNewBusinessMedicalPayments(ExcelUtils_TS02.getCellValueByLabel("newBusinessMedicalPayments"));
+                ExcelUtils_03.getCellValueByLabel("newBusinessBodilyInjuryPerPersonPerAccident"));
+        nvo.setNewBusinessPropertyDamage(ExcelUtils_03.getCellValueByLabel("newBusinessPropertyDamage"));
+        nvo.setNewBusinessMedicalPayments(ExcelUtils_03.getCellValueByLabel("newBusinessMedicalPayments"));
         nvo.setNewBusinessPersonalInjuryProtection(
-                ExcelUtils_TS02.getCellValueByLabel("newBusinessPersonalInjuryProtection"));
+                ExcelUtils_03.getCellValueByLabel("newBusinessPersonalInjuryProtection"));
         nvo.setNewBusinessUninsuredUnderinsuredMotoristBodilyInjury(
-                ExcelUtils_TS02.getCellValueByLabel("newBusinessUninsuredUnderinsuredMotoristBodilyInjury"));
+                ExcelUtils_03.getCellValueByLabel("newBusinessUninsuredUnderinsuredMotoristBodilyInjury"));
         nvo.setNewBusinessUninsuredUnderinsuredMotoristPropertyDamage(
                 "newBusinessUninsuredUnderinsuredMotoristPropertyDamage");
-        nvo.setNewBusinessHomeownersDiscount(ExcelUtils_TS02.getCellValueByLabel("newBusinessHomeownersDiscount"));
-        nvo.setNewBusinessDriver1FirstName(ExcelUtils_TS02.getCellValueByLabel("newBusinessDriver1FirstName"));
-        nvo.setNewBusinessDriver1LastName(ExcelUtils_TS02.getCellValueByLabel("newBusinessDriver1LastName"));
+        nvo.setNewBusinessHomeownersDiscount(ExcelUtils_03.getCellValueByLabel("newBusinessHomeownersDiscount"));
+        nvo.setNewBusinessDriver1FirstName(ExcelUtils_03.getCellValueByLabel("newBusinessDriver1FirstName"));
+        nvo.setNewBusinessDriver1LastName(ExcelUtils_03.getCellValueByLabel("newBusinessDriver1LastName"));
         nvo.setNewBusinessDriver1RelationshipToInsured(
-                ExcelUtils_TS02.getCellValueByLabel("newBusinessDriver1RelationshipToInsured"));
-        nvo.setNewBusinessDriver1DriverStatus(ExcelUtils_TS02.getCellValueByLabel("newBusinessDriver1DriverStatus"));
-        nvo.setNewBusinessDriver1BirthDate(ExcelUtils_TS02.getCellValueByLabel("newBusinessDriver1BirthDate"));
-        nvo.setNewBusinessDriver1Gender(ExcelUtils_TS02.getCellValueByLabel("newBusinessDriver1Gender"));
-        nvo.setNewBusinessDriver1MaritalStatus(ExcelUtils_TS02.getCellValueByLabel("newBusinessDriver1MaritalStatus"));
-        nvo.setNewBusinessDriver1DateLicensed(ExcelUtils_TS02.getCellValueByLabel("newBusinessDriver1DateLicensed"));
-        nvo.setNewBusinessDriver1LicenseNumber(ExcelUtils_TS02.getCellValueByLabel("newBusinessDriver1LicenseNumber"));
-        nvo.setNewBusinessDriver1LicenseState(ExcelUtils_TS02.getCellValueByLabel("newBusinessDriver1LicenseState"));
+                ExcelUtils_03.getCellValueByLabel("newBusinessDriver1RelationshipToInsured"));
+        nvo.setNewBusinessDriver1DriverStatus(ExcelUtils_03.getCellValueByLabel("newBusinessDriver1DriverStatus"));
+        nvo.setNewBusinessDriver1BirthDate(ExcelUtils_03.getCellValueByLabel("newBusinessDriver1BirthDate"));
+        nvo.setNewBusinessDriver1Gender(ExcelUtils_03.getCellValueByLabel("newBusinessDriver1Gender"));
+        nvo.setNewBusinessDriver1MaritalStatus(ExcelUtils_03.getCellValueByLabel("newBusinessDriver1MaritalStatus"));
+        nvo.setNewBusinessDriver1DateLicensed(ExcelUtils_03.getCellValueByLabel("newBusinessDriver1DateLicensed"));
+        nvo.setNewBusinessDriver1LicenseNumber(ExcelUtils_03.getCellValueByLabel("newBusinessDriver1LicenseNumber"));
+        nvo.setNewBusinessDriver1LicenseState(ExcelUtils_03.getCellValueByLabel("newBusinessDriver1LicenseState"));
         nvo.setNewBusinessDriver1DriversLicenseStatus(
-                ExcelUtils_TS02.getCellValueByLabel("newBusinessDriver1DriversLicenseStatus"));
-        nvo.setNewBusinessDriver1SR22(ExcelUtils_TS02.getCellValueByLabel("newBusinessDriver1SR22"));
-        nvo.setNewBusinessDriver1Occupation(ExcelUtils_TS02.getCellValueByLabel("newBusinessDriver1OccupationStatus"));
-        nvo.setNewBusinessVehicle1VIN(ExcelUtils_TS02.getCellValueByLabel("newBusinessVehicle1VIN"));
-        nvo.setNewBusinessVehicle1Use(ExcelUtils_TS02.getCellValueByLabel("newBusinessVehicle1Use"));
+                ExcelUtils_03.getCellValueByLabel("newBusinessDriver1DriversLicenseStatus"));
+        nvo.setNewBusinessDriver1SR22(ExcelUtils_03.getCellValueByLabel("newBusinessDriver1SR22"));
+        nvo.setNewBusinessDriver1Occupation(ExcelUtils_03.getCellValueByLabel("newBusinessDriver1OccupationStatus"));
+        nvo.setNewBusinessVehicle1VIN(ExcelUtils_03.getCellValueByLabel("newBusinessVehicle1VIN"));
+        nvo.setNewBusinessVehicle1Use(ExcelUtils_03.getCellValueByLabel("newBusinessVehicle1Use"));
         nvo.setNewBusinessVehicle1PurchasedOrLeased(
-                ExcelUtils_TS02.getCellValueByLabel("newBusinessVehicle1PurchasedOrLeased"));
+                ExcelUtils_03.getCellValueByLabel("newBusinessVehicle1PurchasedOrLeased"));
         nvo.setNewBusinessVehicle1OtherThanCollisionDeductible(
-                ExcelUtils_TS02.getCellValueByLabel("newBusinessVehicle1OtherThanCollisionDeductible"));
+                ExcelUtils_03.getCellValueByLabel("newBusinessVehicle1OtherThanCollisionDeductible"));
         nvo.setNewBusinessVehicle1CollisionDeductible(
-                ExcelUtils_TS02.getCellValueByLabel("newBusinessVehicle1CollisionDeductible"));
+                ExcelUtils_03.getCellValueByLabel("newBusinessVehicle1CollisionDeductible"));
         nvo.setNewBusinessVehicle1RentalReimbursement(
-                ExcelUtils_TS02.getCellValueByLabel("newBusinessVehicle1RentalReimbursement"));
-        nvo.setNewBusinessVehicle1TowingAndLabor(ExcelUtils_TS02.getCellValueByLabel("newBusinessVehicle1TowingAndLabor"));
+                ExcelUtils_03.getCellValueByLabel("newBusinessVehicle1RentalReimbursement"));
+        nvo.setNewBusinessVehicle1TowingAndLabor(ExcelUtils_03.getCellValueByLabel("newBusinessVehicle1TowingAndLabor"));
         nvo.setNewBusinessVehicle1SpecialEquipment(
-                ExcelUtils_TS02.getCellValueByLabel("newBusinessVehicle1SpecialEquipment"));
-        nvo.setNewBusinessUWQuestions(ExcelUtils_TS02.getCellValueByLabel("newBusinessUWQuestions"));
-        nvo.setNewBusinessPaymentType(ExcelUtils_TS02.getCellValueByLabel("newBusinessPayment Type"));
+                ExcelUtils_03.getCellValueByLabel("newBusinessVehicle1SpecialEquipment"));
+        nvo.setNewBusinessUWQuestions(ExcelUtils_03.getCellValueByLabel("newBusinessUWQuestions"));
+        nvo.setNewBusinessPaymentType(ExcelUtils_03.getCellValueByLabel("newBusinessPayment Type"));
 
         driver.findElement(By.xpath(ConstantsClass.newQuoteButton)).click();
         Select statecode = new Select(driver.findElement(By.id(ConstantsClass.newBusinessStateCode)));
