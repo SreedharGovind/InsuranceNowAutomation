@@ -1,28 +1,17 @@
-package com.smartims.insurancepractice.insurancenow.testscenario03;
+package com.smartims.insurancepractice.insurancenow.testscenario03.testcase06;
 
-import com.smartims.insurancepractice.insurancenow.voClasses.CredentialsVO;
+import com.smartims.insurancepractice.insurancenow.testscenario03.Constants_03;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
 import java.time.Duration;
 
-public class TestCase_06 {
+public class Payment_06 {
     public void testCase_06(ChromeDriver driver) throws InterruptedException {
         Actions actions = new Actions(driver);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-
-        driver.manage().window().maximize();
-
-        driver.get(Constants_03.localHostUrl);
-
-        CredentialsVO cvo = new CredentialsVO();
-
-        driver.findElement(By.id("j_username")).sendKeys("admin");
-
-        driver.findElement(By.id("j_password")).sendKeys("Not9999!", Keys.ENTER);
 
         WebElement policyTab = driver.findElement(By.xpath(Constants_03.policySearchTab));
 
@@ -30,7 +19,7 @@ public class TestCase_06 {
 
         policyTab.click();
 
-        driver.findElement(By.xpath(Constants_03.policyNumberTextField)).sendKeys("PA0000021-01");
+        driver.findElement(By.xpath(Constants_03.policyNumberTextField)).sendKeys("PA0000025-01");
 
         WebElement searchButton = driver.findElement(By.xpath(Constants_03.searchButton));
 
