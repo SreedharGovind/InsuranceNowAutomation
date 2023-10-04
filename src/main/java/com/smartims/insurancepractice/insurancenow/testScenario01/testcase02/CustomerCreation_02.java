@@ -37,15 +37,5 @@ public class CustomerCreation_02 {
         driver.findElement(By.id("CustomerPersonal.BestWayToContact")).sendKeys("Email");
         driver.findElement(By.id("CustomerPersonal.BestTimeToContact")).sendKeys("Morning");
         driver.findElement(By.id("Save")).click();
-//        New quote from Customer
-        driver.findElement(By.xpath("//*[@id=\"SaveAndQuote\"]/span")).click();
-        driver.findElement(By.id("BasicPolicy.ControllingStateCd")).sendKeys("Texas");
-        driver.findElement(By.id("BasicPolicy.EffectiveDt")).sendKeys("09/11/2023");
-        driver.findElement(By.id("BasicPolicy.ProgramType")).sendKeys("Texas Ranger");
-        driver.findElement(By.id("Continue")).click();
-        driver.findElement(By.id("ProviderNumber")).sendKeys("QATeam");
-        driver.findElement(By.id(ConstantsClass.continueButton)).click();
-        driver.findElement(By.id("BasicPolicy.NoLapse")).sendKeys("No");
-        driver.findElement(By.id("BasicPolicy.UninsuredMoreThanThirtyDays")).sendKeys("No");
     }
 }
