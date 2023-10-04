@@ -29,7 +29,7 @@ public class Payment_06 {
         Actions actions = new Actions(driver);
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-
+        driver.manage().window().maximize();
         PaymentVO pvo = new PaymentVO();
 
         pvo.setPaymentScreenPolicyNumber(ExcelUtils_03.getCellValueByLabel("paymentScreenPolicyNumber"));
