@@ -131,4 +131,19 @@ public class ConstantsClass {
     public static final String cancellationType = "//*[@id=\"CancelRequestedByCd\"]";
     public static final String additionalNoticeText = "//*[@id=\"TransactionLongDescription\"]";
     public static final String processButton = "//*[@id=\"Process\"]/span";
+
+
+    //    Exixting customer
+    public static final String existingCustomer = "//*[@id=\"Menu_Policy\"]";
+    public static final String existingCustomerPolicyProcessing = "Menu_Policy_PolicyProcessing";
+    public static final String existingCustomerCustomerSearchBy = "CustomerSearchBy";
+    public static final String existingCustomerCustomerSearchText = "CustomerSearchText";
+    public static final String existingCustomerSearch = "Search";
+    public static final String existingCustomerCustomerList = "//*[@id=\"CustomerList\"]/table/tbody/tr[2]/td[2]/a";
+    public static final String existingCustomerNewQuote = "NewQuote";
+    public static final String existingCustomerControllingStateCd = "BasicPolicy.ControllingStateCd";
+    public static final String existingCustomerEffectiveDt = "BasicPolicy.EffectiveDt";
+    public static final String existingCustomerProgramType = "BasicPolicy.ProgramType";
+
 }
+
