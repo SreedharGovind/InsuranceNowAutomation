@@ -1,17 +1,17 @@
 package com.smartims.insurancepractice.insurancenow.voClasses;
 
 public class PaymentVO {
-   String  paymentScreenPolicyNumber;
+    String paymentScreenPolicyNumber;
     String paymentScreenNewACH;
-    String    paymentScreenPremiumAmount;
-    String         paymentScreenTotalAmount;
-    String  paymentScreenAreyouchargingadditionalfees;
+    String paymentScreenPremiumAmount;
+    String paymentScreenTotalAmount;
+    String paymentScreenAreyouchargingadditionalfees;
 
-    String     paymentScreenBankAccountEntryType;
-    String  paymentScreenBankAccountType;
-    String        paymentScreenAccountNumber;
-    String  paymentScreenRoutingNumber;
-    String      paymentScreenName;
+    String paymentScreenBankAccountEntryType;
+    String paymentScreenBankAccountType;
+    String paymentScreenAccountNumber;
+    String paymentScreenRoutingNumber;
+    String paymentScreenName;
 
     public String getPaymentScreenPolicyNumber() {
         return paymentScreenPolicyNumber;
