@@ -70,7 +70,7 @@ public class NewBusiness_05 {
         driver.findElement(By.id(ConstantsClass.newBusinessProgramType)).sendKeys(nbvo.getNewBusinessProgramType());
         driver.findElement(By.id(ConstantsClass.quickActionNewQuote)).click();
         driver.findElement(By.id(ConstantsClass.continueButton)).click();
-        Thread.sleep(100);
+        Thread.sleep(2100);
         driver.findElement(By.id("BasicPolicy.RenewalTermCd")).sendKeys(nbvo.getNewBusinessTerm());
         driver.findElement(By.id(ConstantsClass.newBusinessProducerCode)).sendKeys(nbvo.getNewBusinessProducerCode());
         driver.findElement(By.id(ConstantsClass.newBusinessProducerLookup)).click();
@@ -92,7 +92,9 @@ public class NewBusiness_05 {
         driver.findElement(By.name(ConstantsClass.newBusinessInsuredEmailAddress)).sendKeys(nbvo.getNewBusinessEmail());
         driver.findElement(By.name(ConstantsClass.newBusinessInsuredPersonalBestWayToContact)).sendKeys(nbvo.getNewBusinessBestWaytoContact());
         driver.findElement(By.name(ConstantsClass.newBusinessInsuredPersonalBestTimeToContact)).sendKeys(nbvo.getNewBusinessBestTimetoContact());
+        Thread.sleep(2000);
         driver.findElement(By.id(ConstantsClass.nextPageBottom)).click();
+
 //      Selecting the new customer
         driver.findElement(By.id("QuoteCustomerClearingRef_5")).click();
 //      Automobile Policy General Screen
@@ -103,6 +105,7 @@ public class NewBusiness_05 {
         driver.findElement(By.name(ConstantsClass.newBusinessUninsured_UnderInsuredMotoristBodilyInjury)).sendKeys(nbvo.getNewBusinessUninsuredUnderinsuredMotoristBodilyInjury());
         driver.findElement(By.name(ConstantsClass.newBusinessUninsured_UnderInsuredMotoristPropertyDamage)).sendKeys(nbvo.getNewBusinessUninsuredUnderinsuredMotoristPropertyDamage());
         driver.findElement(By.name(ConstantsClass.newBusinessHomeOwnersDiscount)).sendKeys(nbvo.getNewBusinessHomeownersDiscount());
+        Thread.sleep(1000);
         driver.findElement(By.id(ConstantsClass.nextPageBottom)).click();
 //        Adding Driver 0r driver details
         driver.findElement(By.id(ConstantsClass.newBusinessAddDriver)).click();
@@ -124,7 +127,7 @@ public class NewBusiness_05 {
 //         Adding vehicle
         driver.findElement(By.name(ConstantsClass.newBusinessVehicle1VIN)).sendKeys(nbvo.getNewBusinessVehicle1VIN());
         driver.findElement(By.id(ConstantsClass.validateVin)).click();
-        Thread.sleep(10000);
+        Thread.sleep(1000);
         // In use
         driver.findElement(By.name(ConstantsClass.newBusinessVehicle1Use)).sendKeys(nbvo.getNewBusinessVehicle1Use());
         driver.findElement(By.name("Vehicle.LeasedVehInd")).sendKeys(nbvo.getNewBusinessVehicle1PurchasedOrLeased());
@@ -134,11 +137,13 @@ public class NewBusiness_05 {
         driver.findElement(By.name("Vehicle.RentalReimbursementLimit")).sendKeys(nbvo.getNewBusinessVehicle1RentalReimbursement());
         driver.findElement(By.name("Vehicle.TowingLaborLimit")).sendKeys(nbvo.getNewBusinessVehicle1TowingAndLabor());
         driver.findElement(By.name("Vehicle.SpecialEquipmentLimit")).sendKeys(nbvo.getNewBusinessVehicle1SpecialEquipment());
+        Thread.sleep(1000);
         driver.findElement(By.id("NextPage_Bottom")).click();
         //Billing
         driver.findElement(By.id("NextPage_Bottom")).click();
         driver.findElement(By.id("BasicPolicy.PayPlanCd_2")).click();
         driver.findElement(By.id("Bind")).click();
+        Thread.sleep(1000);
         driver.findElement(By.id("Wizard_Underwriting")).click();
 //     Underwritting reasons
         driver.findElement(By.id("Question_ProperLicense")).sendKeys(nbvo.getNewBusinessUWQuestions());
@@ -156,26 +161,13 @@ public class NewBusiness_05 {
         driver.findElement(By.id("Question_DriverCondition")).sendKeys(nbvo.getNewBusinessUWQuestions());
         driver.findElement(By.id("Question_VehicleModification")).sendKeys(nbvo.getNewBusinessUWQuestions());
         driver.findElement(By.id("Question_LiveryVehicle")).sendKeys(nbvo.getNewBusinessUWQuestions());
+        Thread.sleep(1000);
         driver.findElement(By.xpath("//*[@id=\"Closeout\"]/span")).click();
 //        Payment close out screen
         driver.findElement(By.id("TransactionInfo.PaymentTypeCd")).sendKeys(nbvo.getNewBusinessPaymentType());
 //        Issue the Bussiness
         driver.findElement(By.xpath("//*[@id=\"Process\"]/span")).click();
-        Robot robot = new Robot();
-        Thread.sleep(30000);
+        Thread.sleep(10000);
 
-        robot.keyPress(KeyEvent.VK_CONTROL); // Press CTRL key
-        robot.keyPress(KeyEvent.VK_W);       // Press W key
-
-// Release the keys in reverse order to ensure they are released properly
-        robot.keyRelease(KeyEvent.VK_W);       // Release W key
-        robot.keyRelease(KeyEvent.VK_CONTROL);
-
-        robot.keyPress(KeyEvent.VK_CONTROL); // Press CTRL key
-        robot.keyPress(KeyEvent.VK_W);       // Press W key
-
-// Release the keys in reverse order to ensure they are released properly
-        robot.keyRelease(KeyEvent.VK_W);       // Release W key
-        robot.keyRelease(KeyEvent.VK_CONTROL);
     }
 }
