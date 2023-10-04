@@ -6,10 +6,10 @@ public class ConstantsClass {
     public static final String password = "j_password";
 
     public static final String menuPolicyNewCustomerAndQuote = "Menu_Policy_NewCustomerAndQuote";
-    public static final String newCustomerEntityTypeCode = "Customer.EntityTypeCd" ;
-    public static final String newCustomerGivenName = "CustomerName.GivenName" ;
-    public static final String newCustomerSurname =  "CustomerName.Surname";
-    public static final String newCustomerDateOfBirth = "CustomerPersonal.BirthDt" ;
+    public static final String newCustomerEntityTypeCode = "Customer.EntityTypeCd";
+    public static final String newCustomerGivenName = "CustomerName.GivenName";
+    public static final String newCustomerSurname = "CustomerName.Surname";
+    public static final String newCustomerDateOfBirth = "CustomerPersonal.BirthDt";
 
     public static final String menuPolicyButton = "//*[@id=\"Menu_Policy\"]";
     public static final String newCustomerResetCommercialName = "ResetCommercialName";
@@ -33,6 +33,7 @@ public class ConstantsClass {
     public static final String newBusinessEffectiveDate = "QuickAction_EffectiveDt";
 
     public static final String newBusinessProgramType = "QuickAction_ProgramType";
+    public static final String basicPolicyControllingStateCode = "BasicPolicy.ControllingStateCd";
     public static final String quickActionNewQuote = "QuickAction_NewQuote";
     public static final String continueButton = "Continue";
     public static final String newBusinessProducerCode = "ProviderNumber";
@@ -121,8 +122,7 @@ public class ConstantsClass {
     public static final String addAdditionalInterest = "AddAdditionalInterest";
     public static final String endorsementAICode = "AI.InterestCd";
     public static final String additionalInterestTypeCode = "AI.InterestTypeCd";
-
-    public static final String saveButton = "Save";
+    public static final String saveButton = "//*[@id=\"Save\"]/span";
     public static final String finishButton = "Closeout";
     public static final String aIDetailLookup = "AIDetail_Lookup";
     public static final String search = "Search";
@@ -131,18 +131,12 @@ public class ConstantsClass {
     public static final String wizardVehicle = "Wizard_Vehicles";
     public static final String addVehicleButtonSidebar = "Navigate_AddRisk_PrivatePassengerAuto";
     public static final String completeEndorsementTransactionButton = "//*[@id=\"Process\"]/span";
-
-
     //    public static final String  = ;
     //    public static final String  = ;
     //    public static final String  = ;
     //    public static final String  = ;
-
-
     //    public static final String  = ;
     //    public static final String  = ;
-
-
     public static final String policySearchTab = "//*[@id=\"AdvancedSearchPolicy\"]";
     public static final String policyNumberTextField = "//*[@id=\"PolicyNumber\"]";
     public static final String searchButton = "//*[@id=\"SearchPolicy\"]";
@@ -159,8 +153,6 @@ public class ConstantsClass {
     public static final String cancellationType = "//*[@id=\"CancelRequestedByCd\"]";
     public static final String additionalNoticeText = "//*[@id=\"TransactionLongDescription\"]";
     public static final String processButton = "//*[@id=\"Process\"]/span";
-
-
     //    Exixting customer
     public static final String existingCustomer = "//*[@id=\"Menu_Policy\"]";
     public static final String existingCustomerPolicyProcessing = "Menu_Policy_PolicyProcessing";
@@ -172,6 +164,7 @@ public class ConstantsClass {
     public static final String existingCustomerControllingStateCd = "BasicPolicy.ControllingStateCd";
     public static final String existingCustomerEffectiveDt = "BasicPolicy.EffectiveDt";
     public static final String existingCustomerProgramType = "BasicPolicy.ProgramType";
+
 
 }
 
