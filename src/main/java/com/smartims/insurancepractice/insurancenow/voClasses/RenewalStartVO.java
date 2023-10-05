@@ -1,17 +1,26 @@
 package com.smartims.insurancepractice.insurancenow.voClasses;
 
 public class RenewalStartVO {
-    String renewalStartStartTransaction;
+
+    String renewalPolicyNumber;
+    String renewalStartTransaction;
     String renewalStartRewriteToProduct;
     String renewalStartDescription;
     String renewalStartAdditionalDeclarationText;
 
-    public String getRenewalStartStartTransaction() {
-        return renewalStartStartTransaction;
+    public String getRenewalPolicyNumber() {
+        return renewalPolicyNumber;
     }
 
-    public void setRenewalStartStartTransaction(String renewalStartStartTransaction) {
-        this.renewalStartStartTransaction = renewalStartStartTransaction;
+    public void setRenewalPolicyNumber(String renewalPolicyNumber) {
+        this.renewalPolicyNumber = renewalPolicyNumber;
+    }
+    public String getrenewalStartTransaction() {
+        return renewalStartTransaction;
+    }
+
+    public void setrenewalStartTransaction(String renewalStartTransaction) {
+        this.renewalStartTransaction = renewalStartTransaction;
     }
 
     public String getRenewalStartRewriteToProduct() {
