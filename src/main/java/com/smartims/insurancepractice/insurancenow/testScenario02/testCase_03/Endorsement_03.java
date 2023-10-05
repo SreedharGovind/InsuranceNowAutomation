@@ -4,6 +4,7 @@ import com.smartims.insurancepractice.insurancenow.commonClasses.ConstantsClass;
 import com.smartims.insurancepractice.insurancenow.voClasses.EndorsementVO;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
@@ -24,21 +25,23 @@ public class Endorsement_03 {
         evo.setEndorsementNonDriver1BirthDate(ExcelUtils_03.getCellValueByLabel("endorsementNonDriver1BirthDate"));
         evo.setEndorsementNonDriver1MaritalStatus(ExcelUtils_03.getCellValueByLabel("endorsementNonDriver1MaritalStatus"));
         evo.setEndorsementNonDriver2FirstName(ExcelUtils_03.getCellValueByLabel("endorsementNonDriver2FirstName"));
-        evo.setEndorsementNonDriver2LastName(ExcelUtils_03.getCellValueByLabel("endorsementNonDriver2LastName"));
+        evo.setEndorsementNonDriver2LastName(ExcelUtils_03.getCellValueByLabel("endorsementNonDriver2LastName	"));
         evo.setEndorsementNonDriver2RelationshipToInsured(
-                ExcelUtils_03.getCellValueByLabel("endorsementNonDriver2RelationshipToInsured"));
+                ExcelUtils_03.getCellValueByLabel("endorsementNonDriver2RelationshipToInsured	"));
         evo.setEndorsementNonDriver2NonDriverType(
-                ExcelUtils_03.getCellValueByLabel("endorsementNonDriver2NonDriverType"));
-        evo.setEndorsementNonDriver2Gender(ExcelUtils_03.getCellValueByLabel("endorsementNonDriver2Gender"));
+                ExcelUtils_03.getCellValueByLabel("endorsementNonDriver2NonDriverType	"));
+        evo.setEndorsementNonDriver2Gender(ExcelUtils_03.getCellValueByLabel("endorsementNonDriver2Gender	"));
         evo.setEndorsementNonDriver2BirthDate(ExcelUtils_03.getCellValueByLabel("endorsementNonDriver2BirthDate"));
         evo.setEndorsementNonDriver2MaritalStatus(ExcelUtils_03.getCellValueByLabel("endorsementNonDriver2MaritalStatus"));
         evo.setEndorsementAICode(ExcelUtils_03.getCellValueByLabel("endorsementAICode"));
         evo.setEndorsementAIInterestType(ExcelUtils_03.getCellValueByLabel("endorsementAIInterestType"));
-
-        Thread.sleep(1000);
-        driver.findElement(By.xpath(ConstantsClass.policySearchTab)).click();
+        WebElement policyTab = driver.findElement(By.xpath(ConstantsClass.policySearchTab));
+        actions.moveToElement(policyTab).perform();
+        policyTab.click();
         driver.findElement(By.xpath(ConstantsClass.policyNumberTextField)).sendKeys("PA0000010-01");
-        driver.findElement(By.xpath(ConstantsClass.searchButton)).click();
+        WebElement searchButton = driver.findElement(By.xpath(ConstantsClass.searchButton));
+        actions.moveToElement(searchButton).perform();
+        searchButton.click();
         driver.findElement(By.xpath(ConstantsClass.startTransactionButton)).click();
         Select transaction = new Select(driver.findElement(By.xpath(ConstantsClass.startNewTransaction)));
         transaction.selectByValue("Endorsement");
@@ -64,7 +67,7 @@ public class Endorsement_03 {
                 .sendKeys(evo.getEndorsementNonDriver1BirthDate());
         driver.findElement(By.id(ConstantsClass.endorsementNonDriver1MaritalStatus))
                 .sendKeys(evo.getEndorsementNonDriver1MaritalStatus());
-        driver.findElement(By.xpath(ConstantsClass.saveButton)).click();
+        driver.findElement(By.id(ConstantsClass.saveButton)).click();
         driver.findElement(By.id(ConstantsClass.navigateNonDriverParty)).click();
         driver.findElement(By.id(ConstantsClass.endorsementNonDriver1FirstName))
                 .sendKeys(evo.getEndorsementNonDriver2FirstName());
@@ -89,9 +92,8 @@ public class Endorsement_03 {
         driver.findElement(By.id(ConstantsClass.additionalInterestTypeCode))
                 .sendKeys(evo.getEndorsementAIInterestType(), Keys.ENTER);
         driver.findElement(By.id(ConstantsClass.privatePassengerAutoCheckbox)).click();
-        driver.findElement(By.xpath(ConstantsClass.saveButton)).click();
+        driver.findElement(By.id(ConstantsClass.saveButton)).click();
         driver.findElement(By.id(ConstantsClass.finishButton)).click();
-        driver.findElement(By.xpath(ConstantsClass.completeEndorsementTransactionButton)).click();
     }
 }
 

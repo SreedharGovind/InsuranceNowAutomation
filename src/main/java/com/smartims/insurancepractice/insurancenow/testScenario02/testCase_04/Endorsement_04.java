@@ -39,12 +39,12 @@ public class Endorsement_04 {
         evo.setEndorsementNonDriver1MaritalStatus(
                 ExcelUtils_04.getCellValueByLabel("endorsementNonDriver1MaritalStatus"));
         evo.setEndorsementNonDriver2FirstName(ExcelUtils_04.getCellValueByLabel("endorsementNonDriver2FirstName"));
-        evo.setEndorsementNonDriver2LastName(ExcelUtils_04.getCellValueByLabel("endorsementNonDriver2LastName"));
+        evo.setEndorsementNonDriver2LastName(ExcelUtils_04.getCellValueByLabel("endorsementNonDriver2LastName	"));
         evo.setEndorsementNonDriver2RelationshipToInsured(
-                ExcelUtils_04.getCellValueByLabel("endorsementNonDriver2RelationshipToInsured"));
+                ExcelUtils_04.getCellValueByLabel("endorsementNonDriver2RelationshipToInsured	"));
         evo.setEndorsementNonDriver2NonDriverType(
-                ExcelUtils_04.getCellValueByLabel("endorsementNonDriver2NonDriverType"));
-        evo.setEndorsementNonDriver2Gender(ExcelUtils_04.getCellValueByLabel("endorsementNonDriver2Gender"));
+                ExcelUtils_04.getCellValueByLabel("endorsementNonDriver2NonDriverType	"));
+        evo.setEndorsementNonDriver2Gender(ExcelUtils_04.getCellValueByLabel("endorsementNonDriver2Gender	"));
         evo.setEndorsementNonDriver2BirthDate(ExcelUtils_04.getCellValueByLabel("endorsementNonDriver2BirthDate"));
         evo.setEndorsementNonDriver2MaritalStatus(
                 ExcelUtils_04.getCellValueByLabel("endorsementNonDriver2MaritalStatus"));
@@ -54,7 +54,7 @@ public class Endorsement_04 {
         evo.setEndorsementVehicle1VIN(ExcelUtils_04.getCellValueByLabel("endorsementVehicle1VIN"));
         evo.setEndorsementVehicle1Use(ExcelUtils_04.getCellValueByLabel("endorsementVehicle1Use"));
         evo.setEndorsementVehicle1PurchasedOrLeased(
-                ExcelUtils_04.getCellValueByLabel("endorsementVehicle1PurchasedOrLeased"));
+                ExcelUtils_04.getCellValueByLabel("endorsementVehicle1PurchasedOrLeased	"));
         evo.setEndorsementVehicle1OtherThanCollisionDeductible(
                 ExcelUtils_04.getCellValueByLabel("endorsementVehicle1OtherThanCollisionDeductible"));
         evo.setEndorsementVehicle1CollisionDeductible(
@@ -62,9 +62,9 @@ public class Endorsement_04 {
         evo.setEndorsementVehicle1RentalReimbursement(
                 ExcelUtils_04.getCellValueByLabel("endorsementVehicle1RentalReimbursement"));
         evo.setEndorsementVehicle1TowingAndLabor(
-                ExcelUtils_04.getCellValueByLabel("endorsementVehicle1TowingAndLabor"));
+                ExcelUtils_04.getCellValueByLabel("endorsementVehicle1TowingAndLabor	"));
         evo.setEndorsementVehicle1SpecialEquipment(
-                ExcelUtils_04.getCellValueByLabel("endorsementVehicle1SpecialEquipment"));
+                ExcelUtils_04.getCellValueByLabel("endorsementVehicle1SpecialEquipment	"));
 
         WebElement policyTab = driver.findElement(By.xpath(ConstantsClass.policySearchTab));
         actions.moveToElement(policyTab).perform();
@@ -100,7 +100,7 @@ public class Endorsement_04 {
                 .sendKeys(evo.getEndorsementNonDriver1BirthDate());
         driver.findElement(By.id(ConstantsClass.endorsementNonDriver1MaritalStatus))
                 .sendKeys(evo.getEndorsementNonDriver1MaritalStatus());
-        driver.findElement(By.xpath(ConstantsClass.saveButton)).click();
+        driver.findElement(By.id(ConstantsClass.saveButton)).click();
         // Non Driver2
         driver.findElement(By.id(ConstantsClass.navigateNonDriverParty)).click();
         driver.findElement(By.id(ConstantsClass.endorsementNonDriver1FirstName))
@@ -118,7 +118,7 @@ public class Endorsement_04 {
                 .sendKeys(evo.getEndorsementNonDriver2BirthDate());
         driver.findElement(By.id(ConstantsClass.endorsementNonDriver1MaritalStatus))
                 .sendKeys(evo.getEndorsementNonDriver2MaritalStatus());
-        driver.findElement(By.xpath(ConstantsClass.saveButton)).click();
+        driver.findElement(By.id(ConstantsClass.saveButton)).click();
         driver.findElement(By.id(ConstantsClass.wizardVehicle)).click();
         driver.findElement(By.id(ConstantsClass.addVehicleButtonSidebar)).click();
 
@@ -140,7 +140,7 @@ public class Endorsement_04 {
                 .sendKeys(evo.getEndorsementVehicle1TowingAndLabor());
         driver.findElement(By.id(ConstantsClass.newBusinessVehicle1SpecialEquipment))
                 .sendKeys(evo.getEndorsementVehicle1SpecialEquipment());
-        driver.findElement(By.xpath(ConstantsClass.saveButton)).click();
+        driver.findElement(By.id(ConstantsClass.saveButton)).click();
         driver.findElement(By.id(ConstantsClass.finishButton)).click();
         driver.findElement(By.xpath(ConstantsClass.completeEndorsementTransactionButton)).click();
     }
