@@ -12,12 +12,10 @@ public class AllTransactions_05 {
         NewBusiness_05 nb = new NewBusiness_05();
         nb.getNewBussines(driver);
 
-
-//        ChromeDriver driver1 = CommonClass.getchromedriver();
+        ChromeDriver driver1 = CommonClass.getchromedriver();
 
         CancellationNotice_05 cn = new CancellationNotice_05();
-        cn.getcancellationNotice(driver);
-
+        cn.getcancellationNotice(driver1);
 
     }
 
