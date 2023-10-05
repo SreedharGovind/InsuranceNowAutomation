@@ -19,7 +19,7 @@ public class CustomerCreation_04 {
         driver.findElement(By.id(ConstantsClass.newCustomerEntityTypeCode)).sendKeys("Individual");
         driver.findElement(By.id(ConstantsClass.newCustomerGivenName)).sendKeys("Ben");
         driver.findElement(By.id(ConstantsClass.newCustomerSurname)).sendKeys("Stocks");
-        driver.findElement(By.id(ConstantsClass.newCustomerDateOfBirth)).sendKeys("07/09/2000");
+        driver.findElement(By.id(ConstantsClass.newCustomerDateOfBirth)).sendKeys("07/09/1988");
         driver.findElement(By.id(ConstantsClass.newCustomerResetCommercialName)).click();
         driver.findElement(By.id(ConstantsClass.newCustomerResetIndexName)).click();
         driver.findElement(By.id(ConstantsClass.newCustomerAddressPrimaryNumber)).sendKeys("882");
