@@ -82,7 +82,7 @@ public class NewBusiness_TC04 {
 
         driver.findElement(By.id(ConstantsClass.existingCustomerEffectiveDt)).sendKeys("10/03/2023");
         driver.findElement(By.id(ConstantsClass.basicPolicyControllingStateCode)).sendKeys("Texas");
-       Thread.sleep(1000);
+        Thread.sleep(1000);
         driver.findElement(By.id(ConstantsClass.existingCustomerProgramType)).sendKeys("Texas Ranger");
         driver.findElement(By.id(ConstantsClass.continueButton)).click();
         WebElement producerNumber = driver.findElement(By.id(ConstantsClass.newBusinessProducerCode));
@@ -94,30 +94,7 @@ public class NewBusiness_TC04 {
         driver.findElement(By.id(ConstantsClass.basicPolicyUninsuredMorethanThirtyDays)).sendKeys(
                 nvo.getNewBusinessDoesTheInsuredHavePriorInsuranceCoverageWithNoLapseOrALapseOfLessThan30Days());
         driver.findElement(By.id(ConstantsClass.newBusinessEntityType)).sendKeys(nvo.getNewBusinessEntityType());
-        driver.findElement(By.id(ConstantsClass.newBusinessInsuredFirstName))
-                .sendKeys(nvo.getNewBusinessIndividualFirst());
-        driver.findElement(By.id(ConstantsClass.newBusinessInsuredLastName))
-                .sendKeys(nvo.getNewBusinessIndividualLast());
-        driver.findElement(By.id(ConstantsClass.resetCommercialName)).click();
-        driver.findElement(By.id(ConstantsClass.newBusinessInsuredPersonalBirthDate))
-                .sendKeys(nvo.getNewBusinessIndividualBirthDate());
-        driver.findElement(By.id(ConstantsClass.newBusinessInsuredMailingAddress))
-                .sendKeys(nvo.getNewBusinessMailingAddress());
-        driver.findElement(By.id(ConstantsClass.newBusinessInsuredMailingAddressCity))
-                .sendKeys(nvo.getNewBusinessMailingAddressCity());
-        driver.findElement(By.id(ConstantsClass.newBusinessInsuredMailingAddressPostalCode))
-                .sendKeys(nvo.getNewBusinessMailingAddressZip());
-        driver.findElement(By.id(ConstantsClass.newBusinessInsuredMailingAddressState))
-                .sendKeys(nvo.getNewBusinessMailingAddressState());
-        driver.findElement(By.id(ConstantsClass.newBusinessInsuredMailingAddressVerify)).click();
-        Thread.sleep(5000);
-        driver.findElement(By.id(ConstantsClass.newBusinessInsuredEmailAddress)).sendKeys(nvo.getNewBusinessEmail());
-        driver.findElement(By.id(ConstantsClass.newBusinessInsuredPersonalBestWayToContact))
-                .sendKeys(nvo.getNewBusinessBestWaytoContact());
-        driver.findElement(By.id(ConstantsClass.newBusinessInsuredPersonalBestTimeToContact))
-                .sendKeys(nvo.getNewBusinessBestTimetoContact());
         driver.findElement(By.id(ConstantsClass.nextPageBottom)).click();
-        driver.findElement(By.id(ConstantsClass.quoteCustomer)).click();
         Select bodilyInjury = new Select(driver.findElement(By.id(ConstantsClass.newBusinessBodilyInjuryLimit)));
         bodilyInjury.selectByVisibleText(nvo.getNewBusinessBodilyInjuryPerPersonPerAccident());
         Select propertyDamage = new Select(driver.findElement(By.id(ConstantsClass.newBusinessPropertyDamageLimit)));
