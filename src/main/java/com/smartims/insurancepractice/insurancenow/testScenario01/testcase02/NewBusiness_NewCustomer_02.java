@@ -4,6 +4,7 @@ import com.smartims.insurancepractice.insurancenow.commonClasses.ConstantsClass;
 import com.smartims.insurancepractice.insurancenow.testScenario01.testcase01.ExcelUtils_01;
 import com.smartims.insurancepractice.insurancenow.voClasses.ExistingCustomerVO;
 import com.smartims.insurancepractice.insurancenow.voClasses.NewBusinessVO;
+import com.smartims.insurancepractice.insurancenow.voClasses.NewCustomerCreationVO;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,11 +12,25 @@ import org.openqa.selenium.interactions.Actions;
 
 import java.io.IOException;
 
-public class NewBusiness_ExistingCustomer_02 {
+public class NewBusiness_NewCustomer_02 {
     public void getNewBusiness_ExistingCustomer(ChromeDriver driver) throws InterruptedException, IOException {
         Actions action = new Actions(driver);
         NewBusinessVO nbvo = new NewBusinessVO();
         ExistingCustomerVO evo = new ExistingCustomerVO();
+        NewCustomerCreationVO ncvo = new NewCustomerCreationVO();
+        ncvo.setNewCustomerEntityType(ExcelUtils_01.getCellValueByLabel("newCustomerEntityType"));
+        ncvo.setNewCustomerIndividualFirstName(ExcelUtils_01.getCellValueByLabel("newCustomerIndividualFirstName"));
+        ncvo.setNewCustomerIndividualLastName(ExcelUtils_01.getCellValueByLabel("newCustomerIndividualLastName"));
+        ncvo.setNewCustomerIndividualBirthDate(ExcelUtils_01.getCellValueByLabel("newCustomerIndividualBirthDate"));
+        ncvo.setNewCustomerStreetName(ExcelUtils_01.getCellValueByLabel("newCustomerStreetName"));
+        ncvo.setNewCustomerCity(ExcelUtils_01.getCellValueByLabel("newCustomerCity"));
+        ncvo.setNewCustomerStateProvCd(ExcelUtils_01.getCellValueByLabel("newCustomerStateProvCd"));
+        ncvo.setNewCustomerPostalCode(ExcelUtils_01.getCellValueByLabel("newCustomerPostalCode"));
+        ncvo.setNewCustomerPrimaryPhone(ExcelUtils_01.getCellValueByLabel("newCustomerPrimaryPhone"));
+        ncvo.setNewCustomerPhoneNumber(ExcelUtils_01.getCellValueByLabel("newCustomerPhoneNumber"));
+        ncvo.setNewCustomerEmail(ExcelUtils_01.getCellValueByLabel("newCustomerEmail"));
+        ncvo.setNewCustomerBestWaytoContact(ExcelUtils_01.getCellValueByLabel("newCustomerBestWaytoContact"));
+        ncvo.setNewCustomerBestTimetoContact(ExcelUtils_01.getCellValueByLabel("newCustomerBestTimetoContact"));
         evo.setExistingCustomerSearchBy(ExcelUtils_01.getCellValueByLabel("existingCustomerSearchBy"));
         evo.setExistingCustomerSearchText(ExcelUtils_01.getCellValueByLabel("existingCustomerSearchText"));
         evo.setExistingCustomerControllingStateCd(ExcelUtils_01.getCellValueByLabel("existingCustomerControllingStateCd"));
@@ -55,15 +70,37 @@ public class NewBusiness_ExistingCustomer_02 {
         nbvo.setNewBusinessUWQuestions(ExcelUtils_01.getCellValueByLabel("newBusinessUWQuestions"));
         nbvo.setNewBusinessPaymentType(ExcelUtils_01.getCellValueByLabel("newBusinessPaymentType"));
 
-        WebElement customer = driver.findElement(By.xpath(ConstantsClass.existingCustomer));
+
+        WebElement customer = driver.findElement(By.xpath(ConstantsClass.newCustomer));
         action.moveToElement(customer).perform();
-        driver.findElement(By.id(ConstantsClass.existingCustomerPolicyProcessing)).click();
-        driver.findElement(By.id(ConstantsClass.existingCustomerCustomerSearchBy)).sendKeys(evo.getExistingCustomerSearchBy());
-        driver.findElement(By.id(ConstantsClass.existingCustomerCustomerSearchText)).sendKeys(evo.getExistingCustomerSearchText());
-        driver.findElement(By.id(ConstantsClass.existingCustomerSearch)).click();
-        driver.findElement(By.xpath(ConstantsClass.existingCustomerCustomerList)).click();
+        driver.findElement(By.id(ConstantsClass.menuPolicyNewCustomerAndQuote)).click();
+        driver.findElement(By.id(ConstantsClass.newCustomerEntityTypeCode)).sendKeys(ncvo.getNewCustomerEntityType());
+        driver.findElement(By.id(ConstantsClass.newCustomerGivenName)).sendKeys(ncvo.getNewCustomerIndividualFirstName());
+        driver.findElement(By.id(ConstantsClass.newCustomerSurname)).sendKeys(ncvo.getNewCustomerIndividualLastName());
+        driver.findElement(By.id(ConstantsClass.newCustomerDateOfBirth)).sendKeys(ncvo.getNewCustomerIndividualBirthDate());
+        driver.findElement(By.id(ConstantsClass.newCustomerResetCommercialName)).click();
+        driver.findElement(By.id(ConstantsClass.newCustomerResetIndexName)).click();
+        driver.findElement(By.id(ConstantsClass.newCustomerAddressPrimaryNumber)).sendKeys("882");
+        driver.findElement(By.id(ConstantsClass.newCustomerAddressStreetName)).sendKeys(ncvo.getNewCustomerStreetName());
+        driver.findElement(By.id(ConstantsClass.newCustomerCity)).sendKeys(ncvo.getNewCustomerCity());
+        driver.findElement(By.id(ConstantsClass.newCustomerState)).sendKeys(ncvo.getNewCustomerStateProvCd());
+        driver.findElement(By.id(ConstantsClass.newCustomerPostalCode)).sendKeys(ncvo.getNewCustomerPostalCode());
+        driver.findElement(By.id(ConstantsClass.newCustomerAddressVerifyingImg)).click();
+        Thread.sleep(1000);
+        driver.findElement(By.id(ConstantsClass.newCustomerDefaultAddress)).click();
+        Thread.sleep(1000);
+        driver.findElement(By.id(ConstantsClass.newCustomerMailingaddrVerifyImg)).click();
+        Thread.sleep(1000);
+        driver.findElement(By.id(ConstantsClass.copyMailingAddress)).click();
+        Thread.sleep(1000);
+        driver.findElement(By.id(ConstantsClass.newCustomerPrimaryPhoneName)).sendKeys(ncvo.getNewCustomerPrimaryPhone());
+        driver.findElement(By.id(ConstantsClass.newCustomerPrimaryPhoneNumber)).sendKeys(ncvo.getNewCustomerPhoneNumber());
+        driver.findElement(By.id(ConstantsClass.newCustomerEmailAddress)).sendKeys(ncvo.getNewCustomerEmail());
+        driver.findElement(By.id(ConstantsClass.newCustomerBestWayToContact)).sendKeys(ncvo.getNewCustomerBestWaytoContact());
+        driver.findElement(By.id(ConstantsClass.newCustomerBestWayToContact)).sendKeys(ncvo.getNewCustomerBestTimetoContact());
+        driver.findElement(By.id(ConstantsClass.newCustomerSaveButtom)).click();
+        driver.findElement(By.id(ConstantsClass.newCustomerSaveAndQuote)).click();
 //        New quote From Existing customer
-        driver.findElement(By.id(ConstantsClass.existingCustomerNewQuote)).click();
         driver.findElement(By.id(ConstantsClass.existingCustomerControllingStateCd)).sendKeys(evo.getExistingCustomerControllingStateCd());
         driver.findElement(By.id(ConstantsClass.existingCustomerEffectiveDt)).sendKeys(evo.getExistingCustomerEffectiveDt());
         driver.findElement(By.id(ConstantsClass.existingCustomerProgramType)).sendKeys(evo.getExistingCustomerProgramType());
