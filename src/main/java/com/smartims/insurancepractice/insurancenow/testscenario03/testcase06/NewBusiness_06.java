@@ -90,6 +90,7 @@ public class NewBusiness_06 {
         driver.findElement(By.name(ConstantsClass.newBusinessInsuredEmailAddress)).sendKeys(nbvo.getNewBusinessEmail());
         driver.findElement(By.name(ConstantsClass.newBusinessInsuredPersonalBestWayToContact)).sendKeys(nbvo.getNewBusinessBestWaytoContact());
         driver.findElement(By.name(ConstantsClass.newBusinessInsuredPersonalBestTimeToContact)).sendKeys(nbvo.getNewBusinessBestTimetoContact());
+        Thread.sleep(1000);
         driver.findElement(By.id(ConstantsClass.nextPageBottom)).click();
 //      Selecting the new customer
         driver.findElement(By.id("QuoteCustomerClearingRef_5")).click();
@@ -101,6 +102,7 @@ public class NewBusiness_06 {
         driver.findElement(By.name(ConstantsClass.newBusinessUninsured_UnderInsuredMotoristBodilyInjury)).sendKeys(nbvo.getNewBusinessUninsuredUnderinsuredMotoristBodilyInjury());
         driver.findElement(By.name(ConstantsClass.newBusinessUninsured_UnderInsuredMotoristPropertyDamage)).sendKeys(nbvo.getNewBusinessUninsuredUnderinsuredMotoristPropertyDamage());
         driver.findElement(By.name(ConstantsClass.newBusinessHomeOwnersDiscount)).sendKeys(nbvo.getNewBusinessHomeownersDiscount());
+        Thread.sleep(1000);
         driver.findElement(By.id(ConstantsClass.nextPageBottom)).click();
 //        Adding Driver 0r driver details
         driver.findElement(By.id(ConstantsClass.newBusinessAddDriver)).click();
@@ -118,6 +120,7 @@ public class NewBusiness_06 {
 //        employee details
         driver.findElement(By.name(ConstantsClass.newBusinessDriver1OccupationStatus)).sendKeys(nbvo.getNewBusinessDriver1Occupation());
         driver.findElement(By.id(ConstantsClass.nextPageBottom)).click();
+        Thread.sleep(1000);
         driver.findElement(By.id(ConstantsClass.navigateAddRiskPrivatePassengerAuto)).click();
 //         Adding vehicle
         driver.findElement(By.name(ConstantsClass.newBusinessVehicle1VIN)).sendKeys(nbvo.getNewBusinessVehicle1VIN());
@@ -132,11 +135,13 @@ public class NewBusiness_06 {
         driver.findElement(By.name("Vehicle.RentalReimbursementLimit")).sendKeys(nbvo.getNewBusinessVehicle1RentalReimbursement());
         driver.findElement(By.name("Vehicle.TowingLaborLimit")).sendKeys(nbvo.getNewBusinessVehicle1TowingAndLabor());
         driver.findElement(By.name("Vehicle.SpecialEquipmentLimit")).sendKeys(nbvo.getNewBusinessVehicle1SpecialEquipment());
+        Thread.sleep(1000);
         driver.findElement(By.id("NextPage_Bottom")).click();
         //Billing
         driver.findElement(By.id("NextPage_Bottom")).click();
         driver.findElement(By.id("BasicPolicy.PayPlanCd_2")).click();
         driver.findElement(By.id("Bind")).click();
+        Thread.sleep(1000);
         driver.findElement(By.id("Wizard_Underwriting")).click();
 //     Underwritting reasons
         driver.findElement(By.id("Question_ProperLicense")).sendKeys(nbvo.getNewBusinessUWQuestions());
@@ -159,6 +164,7 @@ public class NewBusiness_06 {
         driver.findElement(By.id("TransactionInfo.PaymentTypeCd")).sendKeys(nbvo.getNewBusinessPaymentType());
 //        Issue the Bussiness
         driver.findElement(By.xpath("//*[@id=\"Process\"]/span")).click();
+        Thread.sleep(10000);
     }
 
 }
