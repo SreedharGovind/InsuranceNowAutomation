@@ -14,5 +14,9 @@ public class AllTransactions_03 {
         // Create new Account
         NewBusiness_03 nb = new NewBusiness_03();
         nb.newBusiness_03(driver, actions);
+
+        ChromeDriver driver1 = CommonClass.getchromedriver();
+        Endorsement_03 en = new Endorsement_03();
+        en.endorsement_03(driver1, actions);
     }
 }
