@@ -1,31 +1,18 @@
 package com.smartims.insurancepractice.insurancenow.testScenario02.testCase_03;
 
 import com.smartims.insurancepractice.insurancenow.commonClasses.ConstantsClass;
-import com.smartims.insurancepractice.insurancenow.voClasses.CredentialsVO;
 import com.smartims.insurancepractice.insurancenow.voClasses.EndorsementVO;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
 import java.io.IOException;
-import java.time.Duration;
 
 public class Endorsement_03 {
-    public static void main(String[] args) throws IOException {
-        ChromeOptions co = new ChromeOptions();
-        co.addArguments("--remote-allow-origins=*");
-        ChromeDriver driver = new ChromeDriver(co);
-        Actions actions = new Actions(driver);
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.manage().window().maximize();
-        driver.get(ConstantsClass.localHostUrl);
-        CredentialsVO cvo = new CredentialsVO();
-        driver.findElement(By.id("j_username")).sendKeys("admin");
-        driver.findElement(By.id("j_password")).sendKeys("Not9999!", Keys.ENTER);
+    void endorsement_03(ChromeDriver driver, Actions actions) throws IOException, InterruptedException {
         EndorsementVO evo = new EndorsementVO();
         evo.setEndorsementEffectiveDate(ExcelUtils_03.getCellValueByLabel("endorsementEffectiveDate"));
         evo.setEndorsementEntityType(ExcelUtils_03.getCellValueByLabel("endorsementEntityType"));
