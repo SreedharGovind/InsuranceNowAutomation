@@ -126,12 +126,23 @@ public class Constants_03 {
     public static final String achName = "ACHName";
     public static final String submitPaymentButton = "/html/body/main/form/div[1]/div/div[2]/div/div[1]/div/div/div/div[3]/a/span";
     public static final String submitPaymentOk = "dialogOK";
-// public static final String = "";
-// public static final String = "";
-// public static final String = "";
 
-    //Batch Jobs
+    // Batch job
+    public static final String operations = "Menu_Operations";
+    public static final String batchJob = "Menu_Operations_BatchJobs";
+    public static final String dailyManual = "DailyManual";
+
+    public static final String batchJobRunDate = "batchJobRunDate";
+    public static final String batchJobInceptionDate = "batchJobInceptionDate";
+    public static final String questionRunDt = "question_RunDt";
+
+    public static final String question_InceptionDt = "question_InceptionDt";
+    public static final String skipAll = "skipAll";
+    public static final String skip_ActionARCycle = "skip_ActionARCycle";
+    public static final String skip_ActionTaskSystem = "skip_ActionTaskSystem";
+    public static final String startJobAction = "startJobAction";
+// public static final String = "";
     // public static final String = "";
-
-
+// public static final String = "";
+// public static final String = "";
 }
