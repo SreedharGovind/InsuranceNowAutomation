@@ -5,6 +5,7 @@ public class ConstantsClass {
     public static final String username = "j_username";
     public static final String password = "j_password";
 
+    public static final String newCustomer="//*[@id=\"Menu_Policy\"]";
     public static final String menuPolicyNewCustomerAndQuote = "Menu_Policy_NewCustomerAndQuote";
     public static final String newCustomerEntityTypeCode = "Customer.EntityTypeCd";
     public static final String newCustomerGivenName = "CustomerName.GivenName";
@@ -21,12 +22,16 @@ public class ConstantsClass {
     public static final String newCustomerPostalCode = "CustomerLookupAddr.PostalCode";
     public static final String newCustomerAddressVerifyingImg = "CustomerLookupAddr.addrVerifyImg";
     public static final String newCustomerDefaultAddress = "DefaultAddress";
+    public static final String newCustomerMailingaddrVerifyImg= "CustomerMailingAddr.addrVerifyImg";
     public static final String newCustomerPrimaryPhoneName = "CustomerPhonePrimary.PhoneName";
     public static final String newCustomerPrimaryPhoneNumber = "CustomerPhonePrimary.PhoneNumber";
     public static final String newCustomerEmailAddress = "CustomerEmail.EmailAddr";
     public static final String copyMailingAddress = "CopyAddress";
     public static final String newCustomerBestWayToContact = "CustomerPersonal.BestWayToContact";
     public static final String newCustomerBestTimeToContact = "CustomerPersonal.BestTimeToContact";
+    public static final String newCustomerSaveButtom="Save";
+
+    public static final String newCustomerSaveAndQuote="SaveAndQuote";
     public static final String saveAndQuoteButton = "//*[@id=\"SaveAndQuote\"]/span";
     public static final String newQuoteButton = "//*[@id=\"QuickAction_NewQuote_Holder\"]/span";
     public static final String newBusinessStateCode = "QuickAction_StateCd";
