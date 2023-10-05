@@ -82,6 +82,7 @@ public class NewBusiness_TC04 {
 
         driver.findElement(By.id(ConstantsClass.existingCustomerEffectiveDt)).sendKeys("10/03/2023");
         driver.findElement(By.id(ConstantsClass.basicPolicyControllingStateCode)).sendKeys("Texas");
+       Thread.sleep(1000);
         driver.findElement(By.id(ConstantsClass.existingCustomerProgramType)).sendKeys("Texas Ranger");
         driver.findElement(By.id(ConstantsClass.continueButton)).click();
         WebElement producerNumber = driver.findElement(By.id(ConstantsClass.newBusinessProducerCode));
