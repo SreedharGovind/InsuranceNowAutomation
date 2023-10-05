@@ -3,7 +3,6 @@ package com.smartims.insurancepractice.insurancenow.testscenario03.testcase06;
 import com.smartims.insurancepractice.insurancenow.testscenario03.Constants_03;
 import com.smartims.insurancepractice.insurancenow.testscenario03.ExcelUtils_03;
 import com.smartims.insurancepractice.insurancenow.voClasses.BatchJobVO;
-import com.smartims.insurancepractice.insurancenow.voClasses.CredentialsVO;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
