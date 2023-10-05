@@ -155,7 +155,7 @@ public class NewBusiness_03 {
         driver.findElement(By.id(ConstantsClass.navigateAddRiskPrivatePassengerAuto)).click();
         driver.findElement(By.id(ConstantsClass.newBusinessVehicle1VIN)).sendKeys(nvo.getNewBusinessVehicle1VIN());
         driver.findElement(By.id(ConstantsClass.validateVin)).click();
-        Thread.sleep(5000);
+        Thread.sleep(7000);
         driver.findElement(By.id(ConstantsClass.newBusinessVehicle1Use)).sendKeys(nvo.getNewBusinessVehicle1Use());
         driver.findElement(By.id(ConstantsClass.newBusinessVehicle1PurchasedOrLeased)).sendKeys("Owned");
         driver.findElement(By.id(ConstantsClass.newBusinessVehicle1OtherThanCollisionDeductible))
