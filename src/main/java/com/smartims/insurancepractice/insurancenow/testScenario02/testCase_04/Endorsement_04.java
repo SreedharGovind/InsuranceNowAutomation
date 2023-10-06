@@ -69,7 +69,7 @@ public class Endorsement_04 {
         WebElement policyTab = driver.findElement(By.xpath(ConstantsClass.policySearchTab));
         actions.moveToElement(policyTab).perform();
         policyTab.click();
-        driver.findElement(By.xpath(ConstantsClass.policyNumberTextField)).sendKeys("PA0000013-01");
+        driver.findElement(By.xpath(ConstantsClass.policyNumberTextField)).sendKeys("PA0000049-01");
         WebElement searchButton = driver.findElement(By.xpath(ConstantsClass.searchButton));
         actions.moveToElement(searchButton).perform();
         searchButton.click();
